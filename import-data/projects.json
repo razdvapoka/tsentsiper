@@ -1,0 +1,3505 @@
+[
+  {
+    "year": 2020,
+    "order": 7,
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "1IdOibKJGAJCIN5pz4wEOC",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:11.315Z",
+        "updatedAt": "2020-08-16T15:01:11.315Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "[Under NDA]", "ru-RU": "[Под NDA]" },
+        "description": {
+          "en-US": "Quick checkout process and user interface for a large grocery retailer",
+          "ru-RU": "Процесс быстрой покупки и интерфейс касс самообслуживания для крупной сети магазинов у дома"
+        },
+        "category": { "en-US": "Retail", "ru-RU": "Торговля" },
+        "type": {
+          "en-US": "User Experience",
+          "ru-RU": "Пользовательский опыт"
+        },
+        "year": { "en-US": 2020 }
+      }
+    }
+  },
+  {
+    "year": 2020,
+    "order": 6,
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "5Bk3u2PQmg7DdJGs97pg0E",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:12.104Z",
+        "updatedAt": "2020-08-16T15:01:12.104Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "[Under NDA]", "ru-RU": "[Под NDA]" },
+        "description": {
+          "en-US": "Customer experience strategy for a large agricultural producer",
+          "ru-RU": "Стратегия клиентского опыта для крупного агрохолдинга"
+        },
+        "category": { "en-US": "Manufacturing", "ru-RU": "Промышленность" },
+        "type": {
+          "en-US": "User Experience",
+          "ru-RU": "Пользовательский опыт"
+        },
+        "year": { "en-US": 2020 }
+      }
+    }
+  },
+  {
+    "year": 2020,
+    "order": 5,
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "6RuMbt5BuP4dnzjv2wUNJX",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:09.434Z",
+        "updatedAt": "2020-08-16T15:01:09.434Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "[Under NDA]", "ru-RU": "[Под NDA]" },
+        "description": {
+          "en-US": "Retail branch concept for a large bank",
+          "ru-RU": "Концепция отделений для крупного частного банка"
+        },
+        "category": { "en-US": "Finance", "ru-RU": "Финансы" },
+        "type": { "en-US": "Place", "ru-RU": "Место" },
+        "year": { "en-US": 2020 }
+      }
+    }
+  },
+  {
+    "year": 2020,
+    "order": 4,
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "3NWBKY8N5S22MO6zEROpCY",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:15.189Z",
+        "updatedAt": "2020-08-16T15:01:15.189Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "[Under NDA]", "ru-RU": "[Под NDA]" },
+        "description": {
+          "en-US": "Customer experience for a large grocery retailer",
+          "ru-RU": "Опыт покупателей для крупной сети магазинов у дома"
+        },
+        "category": { "en-US": "Retail", "ru-RU": "Торговля" },
+        "type": {
+          "en-US": "User Experience",
+          "ru-RU": "Пользовательский опыт"
+        },
+        "year": { "en-US": 2020 }
+      }
+    }
+  },
+  {
+    "year": 2020,
+    "order": 3,
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "5Q5FtGvUq9pCCpvQM5U3U7",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:19.302Z",
+        "updatedAt": "2020-08-16T15:01:19.302Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "[Under NDA]", "ru-RU": "[Под NDA]" },
+        "description": {
+          "en-US": "Infrastructure and services concept for a premium residential development in central Moscow",
+          "ru-RU": "Концепция инфраструктуры и сервисов для жилого комплекса премиум класса в центре Москвы"
+        },
+        "category": { "en-US": "Real Estate", "ru-RU": "Недвижимость" },
+        "type": { "en-US": "Place", "ru-RU": "Место" },
+        "year": { "en-US": 2020 }
+      }
+    }
+  },
+  {
+    "year": 2020,
+    "order": 2,
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "2nWJRFtKf8dJJG6sdvgke9",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:07.504Z",
+        "updatedAt": "2020-08-16T15:01:07.504Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "Samokat", "ru-RU": "Самокат" },
+        "description": {
+          "en-US": "Private label strategy for an instant grocery delivery service",
+          "ru-RU": "Стратегия создания собственных торговых марок для сервиса мгновенной доставки продуктов"
+        },
+        "category": { "en-US": "Retail", "ru-RU": "Торговля" },
+        "type": { "en-US": "Brand", "ru-RU": "Бренд" },
+        "year": { "en-US": 2020 }
+      }
+    }
+  },
+  {
+    "year": 2020,
+    "order": 1,
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "5GdmpKL0LVzWHYiYA8iEgI",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:09.442Z",
+        "updatedAt": "2020-08-16T15:01:09.442Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Museum Estate of Vasily Polenov",
+          "ru-RU": "Музей-заповедник Василия Поленова"
+        },
+        "description": {
+          "en-US": "Concept of the Family History Center in Tula",
+          "ru-RU": "Концепция «Центра семейной истории» в Туле"
+        },
+        "category": { "en-US": "Culture", "ru-RU": "Культура" },
+        "type": { "en-US": "Place", "ru-RU": "Место" },
+        "year": { "en-US": 2020 }
+      }
+    }
+  },
+  {
+    "year": 2019,
+    "order": 21,
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "01PIIx3ZQQTzegxGm7zOYg",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:07.497Z",
+        "updatedAt": "2020-08-16T15:01:07.497Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "mos.ru", "ru-RU": "mos.ru" },
+        "description": {
+          "en-US": "Ideas of new city services",
+          "ru-RU": "Идеи новых городских сервисов"
+        },
+        "category": {
+          "en-US": "Public administration",
+          "ru-RU": "Государственное управление"
+        },
+        "type": { "en-US": "New Product", "ru-RU": "Новые продукты" },
+        "year": { "en-US": 2019 }
+      }
+    }
+  },
+  {
+    "year": 2019,
+    "order": 20,
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "4OZnYZvhASaco3FuhZHJrw",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:08.202Z",
+        "updatedAt": "2020-08-16T15:01:08.202Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "Severstal", "ru-RU": "Северсталь" },
+        "description": {
+          "en-US": "Onboarding and ordering process for new clients",
+          "ru-RU": "Процессы онбординга новых клиентов и заказа продукции"
+        },
+        "category": { "en-US": "Manufacturing", "ru-RU": "Промышленность" },
+        "type": {
+          "en-US": "User Experience",
+          "ru-RU": "Пользовательский опыт"
+        },
+        "year": { "en-US": 2019 }
+      }
+    }
+  },
+  {
+    "year": 2019,
+    "order": 19,
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "5H2bc20aajrHGjePlnSeZk",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:19.090Z",
+        "updatedAt": "2020-08-16T15:01:19.090Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Babyn Yar Holocaust Memorial Center",
+          "ru-RU": "Мемориальный центр Холокоста «Бабий Яр»"
+        },
+        "description": {
+          "en-US": "Architecture concept for a memorial center in Kyiv",
+          "ru-RU": "Архитектурная концепция мемориала в Киеве"
+        },
+        "category": { "en-US": "Culture", "ru-RU": "Культура" },
+        "type": { "en-US": "Place", "ru-RU": "Место" },
+        "year": { "en-US": 2019 }
+      }
+    }
+  },
+  {
+    "year": 2019,
+    "order": 18,
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "2lD26xogoj2mg3EJE1FUqD",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:08.214Z",
+        "updatedAt": "2020-08-16T15:01:08.214Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "[Under NDA]", "ru-RU": "[Под NDA]" },
+        "description": {
+          "en-US": "Social and cultural strategy for a mixed use development in central Moscow",
+          "ru-RU": "Социокультурная концепция района в центре Москвы"
+        },
+        "category": { "en-US": "Real Estate", "ru-RU": "Недвижимость" },
+        "type": { "en-US": "Place", "ru-RU": "Место" },
+        "year": { "en-US": 2019 }
+      }
+    }
+  },
+  {
+    "year": 2019,
+    "order": 17,
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "1KGR4wavKYBvShbUB2VvPe",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:08.170Z",
+        "updatedAt": "2020-08-16T15:01:08.170Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "[Under NDA]", "ru-RU": "[Под NDA]" },
+        "description": {
+          "en-US": "Healthcare product strategy for an insurance company",
+          "ru-RU": "Продуктовая стратегия для медицинского страхования"
+        },
+        "category": { "en-US": "Insurance", "ru-RU": "Страхование" },
+        "type": {
+          "en-US": "User Experience",
+          "ru-RU": "Пользовательский опыт"
+        },
+        "year": { "en-US": 2019 }
+      }
+    }
+  },
+  {
+    "year": 2019,
+    "order": 16,
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "2dZ1kspoqiUFm7xXWHWHM5",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:07.482Z",
+        "updatedAt": "2020-08-16T15:01:07.482Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "[Under NDA]", "ru-RU": "[Под NDA]" },
+        "description": {
+          "en-US": "Retail concept for a bookstore chain",
+          "ru-RU": "Продуктовая концепция для сети книжных магазинов"
+        },
+        "category": { "en-US": "Retail", "ru-RU": "Торговля" },
+        "type": { "en-US": "New Business", "ru-RU": "Новый бизнес" },
+        "year": { "en-US": 2019 }
+      }
+    }
+  },
+  {
+    "year": 2019,
+    "order": 15,
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "3mifiV8W7A0tzH4AIERTrg",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:07.481Z",
+        "updatedAt": "2020-08-16T15:01:07.481Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "[Under NDA]", "ru-RU": "[Под NDA]" },
+        "description": {
+          "en-US": "Product strategy for a healthcare chain",
+          "ru-RU": "Продуктовая стратегия сети клиник"
+        },
+        "category": { "en-US": "Healthcare", "ru-RU": "Медицина" },
+        "type": { "en-US": "New Product", "ru-RU": "Новые продукты" },
+        "year": { "en-US": 2019 }
+      }
+    }
+  },
+  {
+    "year": 2019,
+    "order": 13,
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "4ZBbubMmB14cV2hOMaWO4R",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:15.221Z",
+        "updatedAt": "2020-08-16T15:01:15.221Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "[Under NDA]", "ru-RU": "[Под NDA]" },
+        "description": {
+          "en-US": "Rebranding of premium products of an insurance company",
+          "ru-RU": "Ребрендинг премиальных продуктов страховой компании"
+        },
+        "category": { "en-US": "Finance", "ru-RU": "Финансы" },
+        "type": { "en-US": "Brand", "ru-RU": "Бренд" },
+        "year": { "en-US": 2019 }
+      }
+    }
+  },
+  {
+    "year": 2019,
+    "order": 12,
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "YE07v6GrdiCLXKYV6MB6Z",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:11.374Z",
+        "updatedAt": "2020-08-16T15:01:11.374Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "[Under NDA]", "ru-RU": "[Под NDA]" },
+        "description": {
+          "en-US": "Rebranding of an insurance company",
+          "ru-RU": "Ребрендинг страховой компании"
+        },
+        "category": { "en-US": "Finance", "ru-RU": "Финансы" },
+        "type": { "en-US": "Brand", "ru-RU": "Бренд" },
+        "year": { "en-US": 2019 }
+      }
+    }
+  },
+  {
+    "year": 2019,
+    "order": 11,
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "4GXAbXuVO96j9QNODdWgGf",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:13.358Z",
+        "updatedAt": "2020-08-16T15:01:13.358Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "[Under NDA]", "ru-RU": "[Под NDA]" },
+        "description": {
+          "en-US": "Rebranding of a residential developer",
+          "ru-RU": "Ребрендинг девелопера"
+        },
+        "category": { "en-US": "Real Estate", "ru-RU": "Недвижимость" },
+        "type": { "en-US": "Brand", "ru-RU": "Бренд" },
+        "year": { "en-US": 2019 }
+      }
+    }
+  },
+  {
+    "year": 2019,
+    "order": 7,
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "6q3IaEVQAvDVw67PCN6Boq",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:11.372Z",
+        "updatedAt": "2020-08-16T15:01:11.372Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "Severstal", "ru-RU": "Северсталь" },
+        "description": {
+          "en-US": "User experience strategy for a steel company",
+          "ru-RU": "Стратегия развития пользовательского опыта клиента металлургической компании"
+        },
+        "category": { "en-US": "Manufacturing", "ru-RU": "Промышленность" },
+        "type": {
+          "en-US": "User Experience",
+          "ru-RU": "Пользовательский опыт"
+        },
+        "year": { "en-US": 2019 }
+      }
+    }
+  },
+  {
+    "year": 2019,
+    "order": 6,
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "1ondEEFUtC83mB9c1I8QOA",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:21.358Z",
+        "updatedAt": "2020-08-16T15:01:21.358Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "[Under NDA]", "ru-RU": "[Под NDA]" },
+        "description": {
+          "en-US": "Social and cultural design for a new city in the Middle East (with Meganom, Mobility in Chain and Alexander Brodsky)",
+          "ru-RU": "Социокультурный дизайн нового города на Ближнем Востоке (совместно с Meganom, Mobility In Chain и Александром Бродским)"
+        },
+        "category": { "en-US": "Real Estate", "ru-RU": "Недвижимость" },
+        "type": { "en-US": "Place", "ru-RU": "Место" },
+        "year": { "en-US": 2019 }
+      }
+    }
+  },
+  {
+    "year": 2019,
+    "order": 5,
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "33UwATtZ65cUBczG4vwZpI",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:23.220Z",
+        "updatedAt": "2020-08-16T15:01:23.220Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "[Under NDA]", "ru-RU": "[Под NDA]" },
+        "description": {
+          "en-US": "Social and cultural design for a new tourist destination in the Middle East (with Meganom, Mobility in Chain, TM/R Design and Alexander Brodsky)",
+          "ru-RU": "Социокультурный дизайн нового туристического центра на Ближнем Востоке (совместно с Meganom, Mobility In Chain, TM/R Design и Александром Бродским)"
+        },
+        "category": { "en-US": "Real Estate", "ru-RU": "Недвижимость" },
+        "type": { "en-US": "Place", "ru-RU": "Место" },
+        "year": { "en-US": 2019 }
+      }
+    }
+  },
+  {
+    "year": 2019,
+    "order": 4,
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "25J2GnHuneRObJwWF4uvd5",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:09.463Z",
+        "updatedAt": "2020-08-16T15:01:09.463Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "Gastromarket", "ru-RU": "Гастромаркет" },
+        "description": {
+          "en-US": "Branding for Baltchug food market and a new chain of food markets",
+          "ru-RU": "Бренд гастромаркета «Балчуг» и новой сети гастромаркетов"
+        },
+        "category": { "en-US": "Restaurants", "ru-RU": "Рестораны" },
+        "type": { "en-US": "Brand", "ru-RU": "Бренд" },
+        "year": { "en-US": 2019 }
+      }
+    }
+  },
+  {
+    "year": 2019,
+    "order": 3,
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "3xxuW2kLX3MgKvOzEYhrQh",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:15.224Z",
+        "updatedAt": "2020-08-16T15:01:15.224Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "[Under NDA]", "ru-RU": "[Под NDA]" },
+        "description": {
+          "en-US": "Branding for an environmental program",
+          "ru-RU": "Бренд экологического проекта"
+        },
+        "category": { "en-US": "Charity", "ru-RU": "Благотворительность" },
+        "type": { "en-US": "Brand", "ru-RU": "Бренд" },
+        "year": { "en-US": 2019 }
+      }
+    }
+  },
+  {
+    "year": 2019,
+    "order": 2,
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "6sug6389hEEYwYHsd5tDQ8",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:13.254Z",
+        "updatedAt": "2020-08-16T15:01:13.254Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "[Under NDA]", "ru-RU": "[Под NDA]" },
+        "description": {
+          "en-US": "Product design of a children’s healthcare and safety service for an insurance company",
+          "ru-RU": "Продуктовый дизайн цифрового сервиса для заботы о здоровье и безопасности детей для страховой компании"
+        },
+        "category": { "en-US": "Finance", "ru-RU": "Финансы" },
+        "type": { "en-US": "New Product", "ru-RU": "Новые продукты" },
+        "year": { "en-US": 2019 }
+      }
+    }
+  },
+  {
+    "year": 2019,
+    "order": 1,
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "ym32ePWTfd6PpbUIicyPV",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:21.235Z",
+        "updatedAt": "2020-08-16T15:01:21.235Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "[Under NDA]", "ru-RU": "[Под NDA]" },
+        "description": {
+          "en-US": "Development of new products course for top managers of companies of a cross industrial holding corporation",
+          "ru-RU": "Программа развития навыков разработки новых продуктов для топ-менеджеров компаний межотраслевого холдинга"
+        },
+        "category": { "en-US": "Education", "ru-RU": "Образование" },
+        "type": { "en-US": "New Product", "ru-RU": "Новые продукты" },
+        "year": { "en-US": 2019 }
+      }
+    }
+  },
+  {
+    "year": 2018,
+    "order": "",
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "6UfcxlCiRSikqXsWVEGfHT",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:15.134Z",
+        "updatedAt": "2020-08-16T15:01:15.134Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "Tsentsiper", "ru-RU": "Ценципер" },
+        "description": {
+          "en-US": "Contemporary Russian visual codes research project",
+          "ru-RU": "Исследование современной русской визуальности"
+        },
+        "category": { "en-US": "Culture", "ru-RU": "Культура" },
+        "type": { "en-US": "Research", "ru-RU": "Исследование" },
+        "year": { "en-US": 2018 }
+      }
+    }
+  },
+  {
+    "year": 2018,
+    "order": "",
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "N8yDzYZgkK0eZ8MKY6bqL",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:07.501Z",
+        "updatedAt": "2020-08-16T15:01:07.501Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Skolkovo School of Management",
+          "ru-RU": "Сколково"
+        },
+        "description": {
+          "en-US": "Series of workshops on creating new",
+          "ru-RU": "Серия воркшопов про придумывание нового"
+        },
+        "category": { "en-US": "Education", "ru-RU": "Образование" },
+        "type": { "en-US": "New Product", "ru-RU": "Новые продукты" },
+        "year": { "en-US": 2018 }
+      }
+    }
+  },
+  {
+    "year": 2018,
+    "order": "",
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "Nl2k1c9gdAhvtjjkrdbvX",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:07.501Z",
+        "updatedAt": "2020-08-16T15:01:07.501Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "Samokat", "ru-RU": "Самокат" },
+        "description": {
+          "en-US": "Digital interface for an instant grocery delivery service",
+          "ru-RU": "Цифровые интерфейсы сервиса мгновенной доставки продуктов"
+        },
+        "category": { "en-US": "Retail", "ru-RU": "Торговля" },
+        "type": {
+          "en-US": "User Experience",
+          "ru-RU": "Пользовательский опыт"
+        },
+        "year": { "en-US": 2018 }
+      }
+    }
+  },
+  {
+    "year": 2018,
+    "order": "",
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "6YumUSbMHtoriPPpuZBJzi",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:07.484Z",
+        "updatedAt": "2020-08-16T15:01:07.484Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "Samokat", "ru-RU": "Самокат" },
+        "description": {
+          "en-US": "Brand for instant grocery delivery service",
+          "ru-RU": "Бренд сервиса мгновенной доставки продуктов"
+        },
+        "category": { "en-US": "Retail", "ru-RU": "Торговля" },
+        "type": { "en-US": "Brand", "ru-RU": "Бренд" },
+        "year": { "en-US": 2018 }
+      }
+    }
+  },
+  {
+    "year": 2018,
+    "order": "",
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "4ucj7QoYWX3gWuIStpxNoF",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:21.121Z",
+        "updatedAt": "2020-08-16T15:01:21.121Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "Gazprombank", "ru-RU": "Газпромбанк" },
+        "description": {
+          "en-US": "Product concept of offers for young parents",
+          "ru-RU": "Концепция комплексных продуктов для молодых родителей"
+        },
+        "category": { "en-US": "Finance", "ru-RU": "Финансы" },
+        "type": { "en-US": "New Product", "ru-RU": "Новые продукты" },
+        "year": { "en-US": 2018 }
+      }
+    }
+  },
+  {
+    "year": 2018,
+    "order": "",
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "2YxiOu0oHLBlc84ehnOEiG",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:23.146Z",
+        "updatedAt": "2020-08-16T15:01:23.146Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "Vtoroye Dyhanie", "ru-RU": "Второе дыхание" },
+        "description": {
+          "en-US": "Rebranding of an NGO",
+          "ru-RU": "Ребрендинг некоммерческой организации"
+        },
+        "category": { "en-US": "Charity", "ru-RU": "Благотворительность" },
+        "type": { "en-US": "Brand", "ru-RU": "Бренд" },
+        "year": { "en-US": 2018 }
+      }
+    }
+  },
+  {
+    "year": 2018,
+    "order": "",
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "4otJE7SICoJv6lLok71GTJ",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:09.452Z",
+        "updatedAt": "2020-08-16T15:01:09.452Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "AlfaInsurance", "ru-RU": "АльфаСтрахование" },
+        "description": {
+          "en-US": "Employee experience design for a large insurance company",
+          "ru-RU": "Стратегия развития опыта сотрудника"
+        },
+        "category": { "en-US": "Finance", "ru-RU": "Финансы" },
+        "type": {
+          "en-US": "User Experience",
+          "ru-RU": "Пользовательский опыт"
+        },
+        "year": { "en-US": 2018 }
+      }
+    }
+  },
+  {
+    "year": 2018,
+    "order": "",
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "6PsmvX66ptAxLYs5hpUOgz",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:09.519Z",
+        "updatedAt": "2020-08-16T15:01:09.519Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "AlfaInsurance", "ru-RU": "АльфаСтрахование" },
+        "description": {
+          "en-US": "New employees’ onboarding experience design",
+          "ru-RU": "Онбординг новых сотрудников"
+        },
+        "category": { "en-US": "Finance", "ru-RU": "Финансы" },
+        "type": {
+          "en-US": "User Experience",
+          "ru-RU": "Пользовательский опыт"
+        },
+        "year": { "en-US": 2018 }
+      }
+    }
+  },
+  {
+    "year": 2018,
+    "order": "",
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "5SnSGpIpsx8u3BdG0AGvpg",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:19.016Z",
+        "updatedAt": "2020-08-16T15:01:19.016Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "AlfaInsurance", "ru-RU": "АльфаСтрахование" },
+        "description": {
+          "en-US": "Employer branding strategy",
+          "ru-RU": "Бренд работодателя"
+        },
+        "category": { "en-US": "Finance", "ru-RU": "Финансы" },
+        "type": { "en-US": "Brand", "ru-RU": "Бренд" },
+        "year": { "en-US": 2018 }
+      }
+    }
+  },
+  {
+    "year": 2018,
+    "order": "",
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "1kOmYU8iITIqO7HJIUfG4F",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:21.374Z",
+        "updatedAt": "2020-08-16T15:01:21.374Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "Smart.Space", "ru-RU": "Smart.Space" },
+        "description": {
+          "en-US": "Mobile user interface design for a property management company",
+          "ru-RU": "Интерфейсы мобильного приложения для клиентов управляющей компании"
+        },
+        "category": { "en-US": "Real Estate", "ru-RU": "Недвижимость" },
+        "type": {
+          "en-US": "User Experience",
+          "ru-RU": "Пользовательский опыт"
+        },
+        "year": { "en-US": 2018 }
+      }
+    }
+  },
+  {
+    "year": 2018,
+    "order": "",
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "78nJILoAksboLtKXAmupUI",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:09.510Z",
+        "updatedAt": "2020-08-16T15:01:09.510Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "[Under NDA]", "ru-RU": "[Под NDA]" },
+        "description": {
+          "en-US": "Omnichannel user experience development strategy for a large eletronics retailer",
+          "ru-RU": "Стратегия развития омниканального клиентского опыта крупнейшей розничной сети"
+        },
+        "category": { "en-US": "Retail", "ru-RU": "Торговля" },
+        "type": {
+          "en-US": "User Experience",
+          "ru-RU": "Пользовательский опыт"
+        },
+        "year": { "en-US": 2018 }
+      }
+    }
+  },
+  {
+    "year": 2017,
+    "order": "",
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "6aoFY4Ip5g97VJP3lajGDr",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:11.371Z",
+        "updatedAt": "2020-08-16T15:01:11.371Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "Rostec", "ru-RU": "Ростех" },
+        "description": {
+          "en-US": "Creative cluster concept in a former factory in Tula (with Orchestra)",
+          "ru-RU": "Концепция творческого кластера на территории бывшего завода «Октава» в Туле (совместно с Orchestra)"
+        },
+        "category": { "en-US": "Culture", "ru-RU": "Культура" },
+        "type": { "en-US": "Place", "ru-RU": "Место" },
+        "year": { "en-US": 2017 }
+      }
+    }
+  },
+  {
+    "year": 2017,
+    "order": "",
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "7BsCxSGIxnLiup9Z4q2IsG",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:19.108Z",
+        "updatedAt": "2020-08-16T15:01:19.108Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "Dominanta", "ru-RU": "Доминанта" },
+        "description": {
+          "en-US": "Social and cultural design for a residential development in the West of Moscow",
+          "ru-RU": "Социокультурный дизайн жилого комплекса на западе Москвы"
+        },
+        "category": { "en-US": "Real Estate", "ru-RU": "Недвижимость" },
+        "type": { "en-US": "Place", "ru-RU": "Место" },
+        "year": { "en-US": 2017 }
+      }
+    }
+  },
+  {
+    "year": 2017,
+    "order": "",
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "6ed7tINvQNKO2FQH5jzd08",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:13.232Z",
+        "updatedAt": "2020-08-16T15:01:13.232Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "Vesper", "ru-RU": "Vesper" },
+        "description": {
+          "en-US": "Social and cultural design of a mixed use development in central Moscow",
+          "ru-RU": "Социокультурный дизайн жилого комплекса Lucky"
+        },
+        "category": { "en-US": "Real Estate", "ru-RU": "Недвижимость" },
+        "type": { "en-US": "Place", "ru-RU": "Место" },
+        "year": { "en-US": 2017 }
+      }
+    }
+  },
+  {
+    "year": 2017,
+    "order": "",
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "60hIeMMWSK0itfnqm1K0SS",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:11.306Z",
+        "updatedAt": "2020-08-16T15:01:11.306Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "Castorama", "ru-RU": "Castorama" },
+        "description": {
+          "en-US": "Customer experience of delivery",
+          "ru-RU": "Клиентский опыт доставки"
+        },
+        "category": { "en-US": "Retail", "ru-RU": "Торговля" },
+        "type": {
+          "en-US": "User Experience",
+          "ru-RU": "Пользовательский опыт"
+        },
+        "year": { "en-US": 2017 }
+      }
+    }
+  },
+  {
+    "year": 2017,
+    "order": "",
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "6zjTuyMvcU4gL6QCuFDzN7",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:23.657Z",
+        "updatedAt": "2020-08-16T15:01:23.657Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Asahi Glass Company",
+          "ru-RU": "Asahi Glass Company"
+        },
+        "description": {
+          "en-US": "Corporate campus and educational platform concept for a glass manufacturing company",
+          "ru-RU": "Концепция кампуса и образовательной платформы для производителя стекла"
+        },
+        "category": { "en-US": "Manufacturing", "ru-RU": "Промышленность" },
+        "type": { "en-US": "New Product", "ru-RU": "Новые продукты" },
+        "year": { "en-US": 2017 }
+      }
+    }
+  },
+  {
+    "year": 2016,
+    "order": 10,
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "4lNc2iBvBjygVb9Vev0olW",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:17.234Z",
+        "updatedAt": "2020-08-16T15:01:17.234Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "Forkhead", "ru-RU": "Forkhead" },
+        "description": {
+          "en-US": "Branding for a diabetes drug research company",
+          "ru-RU": "Бренд компании, разрабатывющей средство для лечения диабета"
+        },
+        "category": { "en-US": "Pharma", "ru-RU": "Фармакология" },
+        "type": { "en-US": "Brand", "ru-RU": "Бренд" },
+        "year": { "en-US": 2016 }
+      }
+    }
+  },
+  {
+    "year": 2016,
+    "order": 9,
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "4kMzrSZsqF6w9Hdqc4S0Iw",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:11.402Z",
+        "updatedAt": "2020-08-16T15:01:11.402Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "Smart.Space", "ru-RU": "Smart.Space" },
+        "description": {
+          "en-US": "Branding for a property management service",
+          "ru-RU": "Бренд сервиса управляющей компании"
+        },
+        "category": { "en-US": "Real Estate", "ru-RU": "Недвижимость" },
+        "type": { "en-US": "Brand", "ru-RU": "Бренд" },
+        "year": { "en-US": 2016 }
+      }
+    }
+  },
+  {
+    "year": 2016,
+    "order": 8,
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "BbwNMa0GfI7wOoblke3PJ",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:10.184Z",
+        "updatedAt": "2020-08-16T15:01:10.184Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "262 5th", "ru-RU": "262 5th" },
+        "description": {
+          "en-US": "Branding for a skyscraper in New York",
+          "ru-RU": "Бренд небоскреба в Нью-Йорке"
+        },
+        "category": { "en-US": "Real Estate", "ru-RU": "Недвижимость" },
+        "type": { "en-US": "Brand", "ru-RU": "Бренд" },
+        "year": { "en-US": 2016 }
+      }
+    }
+  },
+  {
+    "year": 2016,
+    "order": 7,
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "2vWfjkw2n3ARZC5SRoE9KB",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:19.277Z",
+        "updatedAt": "2020-08-16T15:01:19.277Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "Alyona Doletskaya", "ru-RU": "Алена Долецкая" },
+        "description": {
+          "en-US": "Branding for a fashion company (with Maria Doreuli)",
+          "ru-RU": "Бренд (совместно с Марией Дореули)"
+        },
+        "category": { "en-US": "Fashion", "ru-RU": "Мода" },
+        "type": { "en-US": "Brand", "ru-RU": "Бренд" },
+        "year": { "en-US": 2016 }
+      }
+    }
+  },
+  {
+    "year": 2016,
+    "order": 6,
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "7m1FQ8TfhC8l6fn1onhVJo",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:23.338Z",
+        "updatedAt": "2020-08-16T15:01:23.338Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "Polytechnic Museum", "ru-RU": "Политех" },
+        "description": {
+          "en-US": "Brand philosophy and brand architecture for a museum of science",
+          "ru-RU": "Философия и архитектура бренда"
+        },
+        "category": { "en-US": "Culture", "ru-RU": "Культура" },
+        "type": { "en-US": "Brand", "ru-RU": "Бренд" },
+        "year": { "en-US": 2016 }
+      }
+    }
+  },
+  {
+    "year": 2016,
+    "order": 5,
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "7csLcygzkXXKw3uu9IK1Xu",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:13.240Z",
+        "updatedAt": "2020-08-16T15:01:13.240Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "[Under NDA]", "ru-RU": "[Под NDA]" },
+        "description": {
+          "en-US": "Brand philosophy and architecture for a chain of local shopping centers",
+          "ru-RU": "Философия и архитектура бренда сети районных торговых центров"
+        },
+        "category": { "en-US": "Real Estate", "ru-RU": "Недвижимость" },
+        "type": { "en-US": "Brand", "ru-RU": "Бренд" },
+        "year": { "en-US": 2016 }
+      }
+    }
+  },
+  {
+    "year": 2016,
+    "order": 4,
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "6Vb9viwBgkWAjQNKcIjhUD",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:10.129Z",
+        "updatedAt": "2020-08-16T15:01:10.129Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "[Under NDA]", "ru-RU": "[Под NDA]" },
+        "description": {
+          "en-US": "Flagship store concept for a cosmetics retailer",
+          "ru-RU": "Концепция флагманского магазина сети по торговле косметикой"
+        },
+        "category": { "en-US": "Retail", "ru-RU": "Торговля" },
+        "type": { "en-US": "Place", "ru-RU": "Место" },
+        "year": { "en-US": 2016 }
+      }
+    }
+  },
+  {
+    "year": 2016,
+    "order": 3,
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "61hAYFWeuKNFprwdvjFGKG",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:15.242Z",
+        "updatedAt": "2020-08-16T15:01:15.242Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "Brusnika", "ru-RU": "Брусника" },
+        "description": {
+          "en-US": "Branding for Kandisnky residential compound in Yekaterinburg",
+          "ru-RU": "Бренд жилого комплекса «Кандинский» в Екатеринбурге"
+        },
+        "category": { "en-US": "Real Estate", "ru-RU": "Недвижимость" },
+        "type": { "en-US": "Brand", "ru-RU": "Бренд" },
+        "year": { "en-US": 2016 }
+      }
+    }
+  },
+  {
+    "year": 2016,
+    "order": 2,
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "4nR35T1TRBjiGojZqc6dfD",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:17.175Z",
+        "updatedAt": "2020-08-16T15:01:17.175Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "Brusnika", "ru-RU": "Брусника" },
+        "description": {
+          "en-US": "User experience design of buying an apartment for a large regional residential development company",
+          "ru-RU": "Пользовательский опыт покупки квартиры"
+        },
+        "category": { "en-US": "Real Estate", "ru-RU": "Недвижимость" },
+        "type": {
+          "en-US": "User Experience",
+          "ru-RU": "Пользовательский опыт"
+        },
+        "year": { "en-US": 2016 }
+      }
+    }
+  },
+  {
+    "year": 2016,
+    "order": 1,
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "5rZFH4KEWYmUtkGEasP72D",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:19.266Z",
+        "updatedAt": "2020-08-16T15:01:19.266Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "VDNH", "ru-RU": "ВДНХ" },
+        "description": {
+          "en-US": "Strategy for a historical park and museums in Moscow (with Strategy Partners)",
+          "ru-RU": "Концепция развития (совместно со Strategy Partners)"
+        },
+        "category": { "en-US": "Culture", "ru-RU": "Культура" },
+        "type": { "en-US": "Place", "ru-RU": "Место" },
+        "year": { "en-US": 2016 }
+      }
+    }
+  },
+  {
+    "year": 2015,
+    "order": 9,
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "4vTEmdLVX8zC7zsPg7J4Te",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:15.274Z",
+        "updatedAt": "2020-08-16T15:01:15.274Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "Polytechnic Museum", "ru-RU": "Политех" },
+        "description": {
+          "en-US": "Product strategy for a museum of science",
+          "ru-RU": "Продуктовая стратегия"
+        },
+        "category": { "en-US": "Culture", "ru-RU": "Культура" },
+        "type": { "en-US": "Place", "ru-RU": "Место" },
+        "year": { "en-US": 2015 }
+      }
+    }
+  },
+  {
+    "year": 2015,
+    "order": 8,
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "4ne0mh7vKYUos6vlkfoKO7",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:21.317Z",
+        "updatedAt": "2020-08-16T15:01:21.317Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "Russian Post", "ru-RU": "Почта России" },
+        "description": {
+          "en-US": "New online service for sending postcards",
+          "ru-RU": "Онлайн сервис отправки почтовых открыток"
+        },
+        "category": { "en-US": "Logistics", "ru-RU": "Логистика" },
+        "type": { "en-US": "New Product", "ru-RU": "Новые продукты" },
+        "year": { "en-US": 2015 }
+      }
+    }
+  },
+  {
+    "year": 2015,
+    "order": 7,
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "3ctwxBjcOBbF8oihpL7Lo7",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:13.343Z",
+        "updatedAt": "2020-08-16T15:01:13.343Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "Russian Post", "ru-RU": "Почта России" },
+        "description": {
+          "en-US": "New online service for receiving ‘signed-for mail’",
+          "ru-RU": "Сервис для получения заказных писем в электронном виде"
+        },
+        "category": { "en-US": "Logistics", "ru-RU": "Логистика" },
+        "type": { "en-US": "New Product", "ru-RU": "Новые продукты" },
+        "year": { "en-US": 2015 }
+      }
+    }
+  },
+  {
+    "year": 2015,
+    "order": 6,
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "4k5Xewr7E6BFHehbAPtwUN",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:09.459Z",
+        "updatedAt": "2020-08-16T15:01:09.459Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "Russian Post", "ru-RU": "Почта России" },
+        "description": {
+          "en-US": "New online subscription service for newspapers and magazines",
+          "ru-RU": "Онлайн сервис подписки на газеты и журналы"
+        },
+        "category": { "en-US": "Logistics", "ru-RU": "Логистика" },
+        "type": {
+          "en-US": "User Experience",
+          "ru-RU": "Пользовательский опыт"
+        },
+        "year": { "en-US": 2015 }
+      }
+    }
+  },
+  {
+    "year": 2015,
+    "order": 5,
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "7zzZIIkzXib1kX9VL05pkf",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:17.031Z",
+        "updatedAt": "2020-08-16T15:01:17.031Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "Russian Post", "ru-RU": "Почта России" },
+        "description": {
+          "en-US": "User experience in digital channels",
+          "ru-RU": "Пользовательский опыт в цифровых каналах"
+        },
+        "category": { "en-US": "Logistics", "ru-RU": "Логистика" },
+        "type": {
+          "en-US": "User Experience",
+          "ru-RU": "Пользовательский опыт"
+        },
+        "year": { "en-US": 2015 }
+      }
+    }
+  },
+  {
+    "year": 2015,
+    "order": 4,
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "1y0UkybVljHcBUYgOSvRbQ",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:13.306Z",
+        "updatedAt": "2020-08-16T15:01:13.306Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "Russian Post", "ru-RU": "Почта России" },
+        "description": {
+          "en-US": "User interface design and work process reformation of operators’ routine",
+          "ru-RU": "Интерфейсы и процесс работы почтовых операторов"
+        },
+        "category": { "en-US": "Logistics", "ru-RU": "Логистика" },
+        "type": {
+          "en-US": "User Experience",
+          "ru-RU": "Пользовательский опыт"
+        },
+        "year": { "en-US": 2015 }
+      }
+    }
+  },
+  {
+    "year": 2015,
+    "order": 3,
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "gFsLgnwd3aaaCxbLFX4FO",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:19.061Z",
+        "updatedAt": "2020-08-16T15:01:19.061Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "Russian Post", "ru-RU": "Почта России" },
+        "description": {
+          "en-US": "User experience design of sending parcels",
+          "ru-RU": "Пользовательский опыт отправки посылок"
+        },
+        "category": { "en-US": "Logistics", "ru-RU": "Логистика" },
+        "type": {
+          "en-US": "User Experience",
+          "ru-RU": "Пользовательский опыт"
+        },
+        "year": { "en-US": 2015 }
+      }
+    }
+  },
+  {
+    "year": 2015,
+    "order": 2,
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "4Y4DXQ5WW4WnLWGz681StW",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:17.254Z",
+        "updatedAt": "2020-08-16T15:01:17.254Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "Russian Post", "ru-RU": "Почта России" },
+        "description": {
+          "en-US": "New portal",
+          "ru-RU": "Новый портал pochta.ru"
+        },
+        "category": { "en-US": "Logistics", "ru-RU": "Логистика" },
+        "type": {
+          "en-US": "User Experience",
+          "ru-RU": "Пользовательский опыт"
+        },
+        "year": { "en-US": 2015 }
+      }
+    }
+  },
+  {
+    "year": 2015,
+    "order": 1,
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "7AMV2gNKbMJSnEh7lY1RXw",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:11.244Z",
+        "updatedAt": "2020-08-16T15:01:11.244Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "Russian Post", "ru-RU": "Почта России" },
+        "description": {
+          "en-US": "Product strategy",
+          "ru-RU": "Продуктовая стратегия"
+        },
+        "category": { "en-US": "Logistics", "ru-RU": "Логистика" },
+        "type": { "en-US": "New Product", "ru-RU": "Новые продукты" },
+        "year": { "en-US": 2015 }
+      }
+    }
+  },
+  {
+    "year": 2015,
+    "order": "",
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "5Ak6vrcAmAorVY9GRvNWiL",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:21.180Z",
+        "updatedAt": "2020-08-16T15:01:21.180Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "Tsentsiper", "ru-RU": "Ценципер" },
+        "description": {
+          "en-US": "Product concept, branding, user experience and digital design of a home renovation service",
+          "ru-RU": "Концепция продукта, бренд, пользовательский опыт и цифровые интерфейсы сервиса стандартизированного ремонта квартир «Сделано»"
+        },
+        "category": { "en-US": "Real Estate", "ru-RU": "Недвижимость" },
+        "type": { "en-US": "New Business", "ru-RU": "Новый бизнес" },
+        "year": { "en-US": 2015 }
+      }
+    }
+  },
+  {
+    "year": 2015,
+    "order": "",
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "2y8nsuxA8etWLw9jCGQ2Zl",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:17.136Z",
+        "updatedAt": "2020-08-16T15:01:17.136Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "Sberbank", "ru-RU": "Сбербанк" },
+        "description": {
+          "en-US": "Product strategy for bank branches and digital tools for chain design management",
+          "ru-RU": "Продуктовая концепция сети отделений банка и цифровых инструментов для управления дизайном сети"
+        },
+        "category": { "en-US": "Finance", "ru-RU": "Финансы" },
+        "type": { "en-US": "Place", "ru-RU": "Место" },
+        "year": { "en-US": 2015 }
+      }
+    }
+  },
+  {
+    "year": 2015,
+    "order": "",
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "35BgoSJYfCycRLD2W9TCil",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:19.306Z",
+        "updatedAt": "2020-08-16T15:01:19.306Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "Brusnika", "ru-RU": "Брусника" },
+        "description": {
+          "en-US": "Branding for a residential developer",
+          "ru-RU": "Бренд регионального девелопера"
+        },
+        "category": { "en-US": "Real Estate", "ru-RU": "Недвижимость" },
+        "type": { "en-US": "Brand", "ru-RU": "Бренд" },
+        "year": { "en-US": 2015 }
+      }
+    }
+  },
+  {
+    "year": 2014,
+    "order": "",
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "1SKg1HzvadJsVttXwgIZeF",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:13.233Z",
+        "updatedAt": "2020-08-16T15:01:13.233Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Voronezh excavator factory",
+          "ru-RU": "Воронеж&shy;ский экска&shy;ваторный завод"
+        },
+        "description": {
+          "en-US": "Place concept for a mixed use development in central Voronezh",
+          "ru-RU": "Концепция развития территории «Коминтерна» в Воронеже"
+        },
+        "category": { "en-US": "Culture", "ru-RU": "Культура" },
+        "type": { "en-US": "Place", "ru-RU": "Место" },
+        "year": { "en-US": 2014 }
+      }
+    }
+  },
+  {
+    "year": 2013,
+    "order": "",
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "tGrAXmFq1eY7KhYVDLQGJ",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:17.253Z",
+        "updatedAt": "2020-08-16T15:01:17.253Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "N/A", "ru-RU": "N/A" },
+        "description": {
+          "en-US": "Strelka Institute for Media, Architecture and Design",
+          "ru-RU": "Институт медиа, архитектуры и дизайна «Стрелка»"
+        },
+        "category": { "en-US": "Education", "ru-RU": "Образование" },
+        "type": { "en-US": "Place", "ru-RU": "Место" },
+        "year": { "en-US": 2013 }
+      }
+    }
+  },
+  {
+    "year": 2012,
+    "order": "",
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "4WgpYIbWDNFk2IGP4qLKwl",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:21.362Z",
+        "updatedAt": "2020-08-16T15:01:21.362Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "Afisha Company", "ru-RU": "Компания «Афиша»" },
+        "description": {
+          "en-US": "Moscow city culture and events portal",
+          "ru-RU": "afisha.ru"
+        },
+        "category": { "en-US": "Media", "ru-RU": "Медиа" },
+        "type": { "en-US": "New Product", "ru-RU": "Новые продукты" },
+        "year": { "en-US": 2012 }
+      }
+    }
+  },
+  {
+    "year": 2010,
+    "order": 8,
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "5bLF39IWd0dzv6UmYqGzfB",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:23.802Z",
+        "updatedAt": "2020-08-16T15:01:23.802Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "Gorky Park", "ru-RU": "ЦПКИО им. Горького" },
+        "description": {
+          "en-US": "Redevelopment strategy for Gorky park",
+          "ru-RU": "Концепция Парка Горького"
+        },
+        "category": { "en-US": "Culture", "ru-RU": "Культура" },
+        "type": { "en-US": "Place", "ru-RU": "Место" },
+        "year": { "en-US": 2010 }
+      }
+    }
+  },
+  {
+    "year": 2010,
+    "order": 7,
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "6ridpdoU8EcSKn58X5VGcX",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:10.082Z",
+        "updatedAt": "2020-08-16T15:01:10.082Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "Afisha Company", "ru-RU": "Компания «Афиша»" },
+        "description": {
+          "en-US": "Food magazine",
+          "ru-RU": "Журнал «Афиша-Еда»"
+        },
+        "category": { "en-US": "Media", "ru-RU": "Медиа" },
+        "type": { "en-US": "New Product", "ru-RU": "Новые продукты" },
+        "year": { "en-US": 2010 }
+      }
+    }
+  },
+  {
+    "year": 2010,
+    "order": 6,
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "71jmO8ZPK0Ne49uRkxdRuT",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:19.255Z",
+        "updatedAt": "2020-08-16T15:01:19.255Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "Afisha Company", "ru-RU": "Компания «Афиша»" },
+        "description": {
+          "en-US": "Travel magazine",
+          "ru-RU": "Журнал «Афиша-Мир»"
+        },
+        "category": { "en-US": "Media", "ru-RU": "Медиа" },
+        "type": { "en-US": "New Product", "ru-RU": "Новые продукты" },
+        "year": { "en-US": 2010 }
+      }
+    }
+  },
+  {
+    "year": 2010,
+    "order": 5,
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "2aXUrlhhCsYtTWZqEIlqUn",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:19.125Z",
+        "updatedAt": "2020-08-16T15:01:19.125Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "Afisha Company", "ru-RU": "Компания «Афиша»" },
+        "description": {
+          "en-US": "Media production company",
+          "ru-RU": "Ателье «Афиши»"
+        },
+        "category": { "en-US": "Media", "ru-RU": "Медиа" },
+        "type": { "en-US": "New Business", "ru-RU": "Новый бизнес" },
+        "year": { "en-US": 2010 }
+      }
+    }
+  },
+  {
+    "year": 2010,
+    "order": 4,
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "5KvNZjq0GWW4niUkb7IOMI",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:10.226Z",
+        "updatedAt": "2020-08-16T15:01:10.226Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "Afisha Company", "ru-RU": "Компания «Афиша»" },
+        "description": {
+          "en-US": "Afisha Picnic festival",
+          "ru-RU": "Музыкальный фестиваль «Пикник Афиши»"
+        },
+        "category": { "en-US": "Culture", "ru-RU": "Культура" },
+        "type": { "en-US": "Place", "ru-RU": "Место" },
+        "year": { "en-US": 2010 }
+      }
+    }
+  },
+  {
+    "year": 2010,
+    "order": 3,
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "2e1N5gjJaDIbzW9msWzUPI",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:15.272Z",
+        "updatedAt": "2020-08-16T15:01:15.272Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "Afisha Company", "ru-RU": "Компания «Афиша»" },
+        "description": {
+          "en-US": "Alternative city weekly",
+          "ru-RU": "Журнал «Большой город»"
+        },
+        "category": { "en-US": "Media", "ru-RU": "Медиа" },
+        "type": { "en-US": "New Product", "ru-RU": "Новые продукты" },
+        "year": { "en-US": 2010 }
+      }
+    }
+  },
+  {
+    "year": 2010,
+    "order": 2,
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "7ArTcH4LT2h3IPBnNhM15L",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:17.248Z",
+        "updatedAt": "2020-08-16T15:01:17.248Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "Afisha Company", "ru-RU": "Компания «Афиша»" },
+        "description": {
+          "en-US": "Travel guidebook series",
+          "ru-RU": "Путеводители Афиши"
+        },
+        "category": { "en-US": "Media", "ru-RU": "Медиа" },
+        "type": { "en-US": "New Product", "ru-RU": "Новые продукты" },
+        "year": { "en-US": 2010 }
+      }
+    }
+  },
+  {
+    "year": 2010,
+    "order": 1,
+    "entry": {
+      "sys": {
+        "space": {
+          "sys": { "type": "Link", "linkType": "Space", "id": "s05y5945ugur" }
+        },
+        "id": "7pgRU7HFiy7HXpNx5ZZbnU",
+        "type": "Entry",
+        "createdAt": "2020-08-16T15:01:17.148Z",
+        "updatedAt": "2020-08-16T15:01:17.148Z",
+        "environment": {
+          "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6SntyFTBxIgGweC3I66WTV"
+          }
+        },
+        "publishedCounter": 0,
+        "version": 1,
+        "contentType": {
+          "sys": { "type": "Link", "linkType": "ContentType", "id": "project" }
+        }
+      },
+      "fields": {
+        "title": { "en-US": "Afisha Company", "ru-RU": "Компания «Афиша»" },
+        "description": {
+          "en-US": "Moscow city culture and events magazine",
+          "ru-RU": "Журнал «Афиша»"
+        },
+        "category": { "en-US": "Media", "ru-RU": "Медиа" },
+        "type": { "en-US": "New Product", "ru-RU": "Новые продукты" },
+        "year": { "en-US": 2010 }
+      }
+    }
+  }
+]
