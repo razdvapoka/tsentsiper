@@ -5,19 +5,29 @@
   padding-top: 13px
   padding-bottom: 18px
   left: 50%
-  transform: translateX(-50%)
+  transition: transform .3s cubic-bezier(0, 0, .35, 1) 0.5s
+
+  .menuInner
+    transition: height .4s cubic-bezier(.25, .1, .25, 1)
+  .menuUpper
+    transition: opacity .2s ease-out
+
   &:hover
     .menuInner
         height: 146px
-        opacity: 1
-        transition:
-          height .4s cubic-bezier(.25, .1, .25, 1),
-          opacity .4s cubic-bezier(.25, .1, .25, 1)
+        .menuUpper
+          opacity: 1
+          transition: opacity .4s cubic-bezier(.25, .1, .25, 1)
+        .menuDescription
+          opacity: 1
+          transition: opacity .4s cubic-bezier(.25, .1, .25, 1)
 
-  .menuInner
-    transition:
-      height .4s cubic-bezier(.25, .1, .25, 1)
 
+.menuHidden
+  transform: translate(-50%, 70px)
+
+.menuVisible
+  transform: translate(-50%, 0)
 
 .logoBox
   width: 22px

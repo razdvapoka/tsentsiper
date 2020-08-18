@@ -3,6 +3,7 @@ import styles from "./styles.module.styl"
 import cn from "classnames"
 import { useIntl } from "gatsby-plugin-intl"
 import tp from "../../typograf"
+import ArrowRight from "../../icons/arrow-right-s.inline.svg"
 
 const Typograf = ({ children, ...rest }) => (
   <div {...rest}>{tp.execute(children)}</div>
@@ -16,10 +17,32 @@ const ProjectRow = ({
   type,
   children,
   className,
+  hasGallery,
   ...rest
 }) => (
-  <div className={cn("flex", styles.row, className)} {...rest}>
-    <Typograf className={styles.number}>{number}</Typograf>
+  <div
+    className={cn(
+      "flex items-start px-11",
+      styles.row,
+      { "hover:bg-hoverGrey active:bg-activeGrey": hasGallery },
+      className
+    )}
+    {...(hasGallery
+      ? {
+          role: "button",
+          tabIndex: "0",
+        }
+      : {})}
+    {...rest}
+  >
+    <div className="relative">
+      {hasGallery && (
+        <div className={cn("absolute", styles.arrowBox)}>
+          <ArrowRight />
+        </div>
+      )}
+      <Typograf className={styles.number}>{number}</Typograf>
+    </div>
     <Typograf className={styles.client}>{client}</Typograf>
     <Typograf className={styles.project}>{project}</Typograf>
     <Typograf className={styles.category}>{category}</Typograf>
@@ -27,10 +50,16 @@ const ProjectRow = ({
   </div>
 )
 
-const Projects = ({ projects }) => {
+const Projects = ({ projects, isVisible }) => {
   const intl = useIntl()
   return (
-    <div className={cn(styles.container, "pt-6 pb-8 px-11 text-black")}>
+    <div
+      className={cn(
+        styles.container,
+        isVisible ? "opacity-100" : "opacity-0",
+        "pt-4 pb-8 text-black"
+      )}
+    >
       <ProjectRow
         className="text-grey"
         number={intl.formatMessage({ id: "number" })}
@@ -47,9 +76,10 @@ const Projects = ({ projects }) => {
           project={project.description}
           category={project.category}
           type={project.type}
+          hasGallery
         />
       ))}
-      <div className="mt-15 text-grey">
+      <div className="mt-15 text-grey px-11">
         {intl.formatMessage(
           {
             id: "bottom",
