@@ -2,36 +2,86 @@
   max-width: 1200px
   margin: 0 auto
   transition: opacity 0.5s ease-out
+  padding-bottom: 32px
+  @media (max-width: 767px)
+    padding-bottom: 128px
 
 .row
   padding-top: 9px
   padding-bottom: 11px
+  padding-left: 44px
+  padding-right: 44px
   border-radius: 4px
   &:hover
     transition: background-color .1s ease-out
+  @media (max-width: 767px)
+    padding-left: 24px
+    padding-right: 24px
+
+.numberClientBox
+  margin-right: 24px
+  @media (max-width: 767px)
+    margin-right: 12px
+    flex: 3
+  @media (max-width: 539px)
+    flex: 4
+  @media (max-width: 349px)
+    flex: 5
 
 .number
   width: 20px
   margin-right: 19px
   font-feature-settings: "tnum"
+  @media (max-width: 767px)
+    margin-right: 10px
 
 .client
   width: 168px
-  margin-right: 24px
+  @media (max-width: 869px)
+    width: 156px
+  @media (max-width: 767px)
+    width: auto
 
 .project
   flex: 1
   margin-right: 44px
+  @media (max-width: 1059px)
+    margin-right: 24px
+  @media (max-width: 767px)
+    margin-right: 0
+    flex: 7
+  @media (max-width: 539px)
+    flex: 6
 
 .category
   width: 168px
   margin-right: 24px
+  @media (max-width: 1059px)
+    display: none
 
 .type
   width: 168px
+  @media (max-width: 869px)
+    width: 156px
+  @media (max-width: 767px)
+    display: none
 
 .arrowBox
   width: 10px
   right: calc(100% + 16px)
   top: 50%
   transform: translateY(-50%)
+  @media (max-width: 767px)
+    right: calc(100% + 6px)
+
+.bottom
+  padding-left: 44px
+  padding-right: 44px
+  border-radius: 4px
+  margin-top: 49px
+  &:hover
+    transition: background-color .1s ease-out
+  @media (max-width: 767px)
+    padding-left: 24px
+    padding-right: 24px
+    margin-top: 29px

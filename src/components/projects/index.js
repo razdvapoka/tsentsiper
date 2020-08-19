@@ -6,7 +6,7 @@ import tp from "../../typograf"
 import ArrowRight from "../../icons/arrow-right-s.inline.svg"
 
 const Typograf = ({ children, ...rest }) => (
-  <div {...rest}>{tp.execute(children)}</div>
+  <div {...rest} dangerouslySetInnerHTML={{ __html: tp.execute(children) }} />
 )
 
 const ProjectRow = ({
@@ -22,7 +22,7 @@ const ProjectRow = ({
 }) => (
   <div
     className={cn(
-      "flex items-start px-11",
+      "flex items-start",
       styles.row,
       { "hover:bg-hoverGrey active:bg-activeGrey": hasGallery },
       className
@@ -35,15 +35,17 @@ const ProjectRow = ({
       : {})}
     {...rest}
   >
-    <div className="relative">
-      {hasGallery && (
-        <div className={cn("absolute", styles.arrowBox)}>
-          <ArrowRight />
-        </div>
-      )}
-      <Typograf className={styles.number}>{number}</Typograf>
+    <div class={cn("flex items-start", styles.numberClientBox)}>
+      <div className="relative">
+        {hasGallery && (
+          <div className={cn("absolute", styles.arrowBox)}>
+            <ArrowRight />
+          </div>
+        )}
+        <Typograf className={styles.number}>{number}</Typograf>
+      </div>
+      <Typograf className={styles.client}>{client}</Typograf>
     </div>
-    <Typograf className={styles.client}>{client}</Typograf>
     <Typograf className={styles.project}>{project}</Typograf>
     <Typograf className={styles.category}>{category}</Typograf>
     <Typograf className={styles.type}>{type}</Typograf>
@@ -57,7 +59,7 @@ const Projects = ({ projects, isVisible }) => {
       className={cn(
         styles.container,
         isVisible ? "opacity-100" : "opacity-0",
-        "pt-4 pb-8 text-black"
+        "pt-4 text-black"
       )}
     >
       <ProjectRow
@@ -68,18 +70,22 @@ const Projects = ({ projects, isVisible }) => {
         category={intl.formatMessage({ id: "category" })}
         type={intl.formatMessage({ id: "type" })}
       />
-      {projects.map((project, projectIndex) => (
-        <ProjectRow
-          key={project.id}
-          number={projects.length - projectIndex}
-          client={project.title}
-          project={project.description}
-          category={project.category}
-          type={project.type}
-          hasGallery
-        />
-      ))}
-      <div className="mt-15 text-grey px-11">
+      {projects.map((project, projectIndex) => {
+        const number = projects.length - projectIndex
+        const paddedNumber = number <= 9 ? `0${number}` : `${number}`
+        return (
+          <ProjectRow
+            key={project.id}
+            number={paddedNumber}
+            client={project.title}
+            project={project.description}
+            category={project.category}
+            type={project.type}
+            hasGallery
+          />
+        )
+      })}
+      <div className={cn("text-grey", styles.bottom)}>
         {intl.formatMessage(
           {
             id: "bottom",

@@ -10,13 +10,13 @@ import Projects from "../components/projects"
 import SEO from "../components/seo"
 import { useFontsLoaded } from "../fonts-loaded-context"
 
-const IndexPage = ({ data: { contentfulPage: pageData }, pathContext }) => {
+const IndexPage = ({ data: { contentfulPage: pageData }, pageContext }) => {
   const intl = useIntl()
   const { fontsLoaded } = useFontsLoaded()
   return (
     <div>
       <SEO
-        lang={pathContext.language}
+        lang={pageContext.language}
         title={intl.formatMessage({ id: "tsentsiper" })}
         description={pageData.description}
         url={intl.formatMessage({ id: "url" })}

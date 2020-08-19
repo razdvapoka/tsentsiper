@@ -11,9 +11,7 @@ const spacing = sequence(20).reduce(
 module.exports = {
   purge: ["./src/**/*.html", "./src/**/*.js"],
   theme: {
-    screens: {
-      sm: { max: "639px" },
-    },
+    screens: {},
     colors: {
       black: "rgba(38,38,38,1)",
       grey: "rgba(38,38,38,0.4)",
