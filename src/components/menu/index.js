@@ -10,9 +10,10 @@ const Menu = ({ description, isVisible }) => {
   const [isOpen, setIsOpen] = useState(false)
   const intl = useIntl()
   const ref = useRef(null)
-  useOnClickOutside(ref, () => {
+  const close = () => {
     setIsOpen(false)
-  })
+  }
+  useOnClickOutside(ref, close)
   return (
     <nav
       ref={ref}
@@ -56,7 +57,10 @@ const Menu = ({ description, isVisible }) => {
           </IntlContextConsumer>
           <hr className="border-palePurple my-4" />
         </div>
-        <div className={cn("opacity-0 px-2", styles.menuDescription)}>
+        <div
+          className={cn("opacity-0 px-2", styles.menuDescription)}
+          onClick={close}
+        >
           {description}
         </div>
       </div>
