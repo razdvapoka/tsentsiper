@@ -35,7 +35,7 @@ const ProjectRow = ({
       : {})}
     {...rest}
   >
-    <div class={cn("flex items-start", styles.numberClientBox)}>
+    <div className={cn("flex items-start", styles.numberClientBox)}>
       <div className="relative">
         {hasGallery && (
           <div className={cn("absolute", styles.arrowBox)}>
