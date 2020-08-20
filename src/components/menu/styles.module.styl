@@ -26,11 +26,12 @@ menuInnerOpen()
   .menuUpper
     transition: opacity .2s ease-out
 
-  &:hover
-    @media (min-width: 768px)
+:global(.no-touchevents)
+  .menu:hover
       menuInnerOpen()
-  &Open
-    @media (max-width: 767px)
+
+:global(.touchevents)
+  .menuOpen
       menuInnerOpen()
 
 .menuDescription
