@@ -71,8 +71,11 @@
   right: calc(100% + 16px)
   top: 50%
   transform: translateY(-50%)
+  transition: transform 0.4s ease-in-out
   @media (max-width: 767px)
     right: calc(100% + 6px)
+  &Open
+    transform: translateY(-50%) rotate(90deg)
 
 .bottom
   padding-left: 44px
@@ -85,3 +88,21 @@
     padding-left: 24px
     padding-right: 24px
     margin-top: 29px
+
+.imgBox
+  width: 700px
+
+.imgBox + .imgBox
+  margin-left: 24px
+
+.gallery
+  transition: height 0.4s ease-in-out, opacity 0.1s ease-in
+  opacity: 0
+  padding-left: 275px
+  &Open
+    transition: height 0.4s ease-in-out, opacity 0.3s ease-in 0.1s
+    opacity: 1
+
+.caption
+  margin-top: 10px
+  width: 700px

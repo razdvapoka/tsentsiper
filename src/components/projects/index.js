@@ -1,12 +1,43 @@
-import React from "react"
-import styles from "./styles.module.styl"
-import cn from "classnames"
+import { animate, easeInOut, updateScroll, withEase, withTime } from "framez"
 import { useIntl } from "gatsby-plugin-intl"
-import tp from "../../typograf"
+import Img from "gatsby-image"
+import React, { useState, useRef } from "react"
+import cn from "classnames"
+
 import ArrowRight from "../../icons/arrow-right-s.inline.svg"
+import createBreakpoints from "../../hooks/createBreakpoints"
+import styles from "./styles.module.styl"
+import tp from "../../typograf"
+
+const OFFSET_TOP = 11
 
 const Typograf = ({ children, ...rest }) => (
   <div {...rest} dangerouslySetInnerHTML={{ __html: tp.execute(children) }} />
+)
+
+const Gallery = ({ isOpen, gallery, currentItemIndex, caseHeight }) => (
+  <div
+    className={cn("overflow-hidden", styles.gallery, {
+      [styles.galleryOpen]: isOpen,
+    })}
+    style={{ height: isOpen ? caseHeight : 0 }}
+  >
+    <div className="flex items-center h-full">
+      <div>
+        <div className="flex">
+          {gallery.map((item, itemIndex) => (
+            <div key={itemIndex} className={styles.imgBox}>
+              <Img fluid={{ ...item.image.fluid, aspectRatio: 700 / 420 }} />
+            </div>
+          ))}
+        </div>
+        <div className={cn("flex justify-between text-sm", styles.caption)}>
+          <div>{gallery[currentItemIndex].caption}</div>
+          <div>{`${currentItemIndex + 1}/${gallery.length}`}</div>
+        </div>
+      </div>
+    </div>
+  </div>
 )
 
 const ProjectRow = ({
@@ -17,43 +48,110 @@ const ProjectRow = ({
   type,
   children,
   className,
-  hasGallery,
+  gallery,
+  projectIndex,
+  openProjectIndex,
+  setOpenProjectIndex,
+  caseHeight,
   ...rest
-}) => (
-  <div
-    className={cn(
-      "flex items-start",
-      styles.row,
-      { "hover:bg-hoverGrey active:bg-activeGrey": hasGallery },
-      className
-    )}
-    {...(hasGallery
-      ? {
-          role: "button",
-          tabIndex: "0",
-        }
-      : {})}
-    {...rest}
-  >
-    <div className={cn("flex items-start", styles.numberClientBox)}>
-      <div className="relative">
-        {hasGallery && (
-          <div className={cn("absolute", styles.arrowBox)}>
-            <ArrowRight />
-          </div>
+}) => {
+  const ref = useRef(null)
+  const [currentItemIndex, setCurrentItemIndex] = useState(0)
+  const [lastScrollY, setLastScrollY] = useState(0)
+
+  const isOpen = projectIndex === openProjectIndex
+  const isProjectAboveOpen =
+    openProjectIndex !== null && openProjectIndex < projectIndex
+
+  const toggle = () => {
+    const targetY = isOpen
+      ? lastScrollY
+      : window.scrollY +
+        ref.current.getBoundingClientRect().top -
+        OFFSET_TOP -
+        (isProjectAboveOpen ? caseHeight : 0)
+    if (!isOpen) {
+      setLastScrollY(window.scrollY - (isProjectAboveOpen ? caseHeight : 0))
+    }
+    setOpenProjectIndex(isOpen ? null : projectIndex)
+    requestAnimationFrame(() => {
+      animate(
+        withTime(400),
+        withEase(easeInOut()),
+        updateScroll({
+          targetY,
+        })
+      )()
+    })
+  }
+
+  const hasGallery = !!gallery
+
+  return (
+    <React.Fragment>
+      <div
+        ref={ref}
+        className={cn(
+          "flex items-start",
+          styles.row,
+          { "hover:bg-hoverGrey active:bg-activeGrey": hasGallery },
+          className
         )}
-        <Typograf className={styles.number}>{number}</Typograf>
+        {...(hasGallery
+          ? {
+              role: "button",
+              tabIndex: "0",
+              onClick: toggle,
+            }
+          : {})}
+        {...rest}
+      >
+        <div className={cn("flex items-start", styles.numberClientBox)}>
+          <div className="relative">
+            {hasGallery && (
+              <div
+                className={cn("absolute", styles.arrowBox, {
+                  [styles.arrowBoxOpen]: isOpen,
+                })}
+              >
+                <ArrowRight />
+              </div>
+            )}
+            <Typograf className={styles.number}>{number}</Typograf>
+          </div>
+          <Typograf className={styles.client}>{client}</Typograf>
+        </div>
+        <Typograf className={styles.project}>{project}</Typograf>
+        <Typograf className={styles.category}>{category}</Typograf>
+        <Typograf className={styles.type}>{type}</Typograf>
       </div>
-      <Typograf className={styles.client}>{client}</Typograf>
-    </div>
-    <Typograf className={styles.project}>{project}</Typograf>
-    <Typograf className={styles.category}>{category}</Typograf>
-    <Typograf className={styles.type}>{type}</Typograf>
-  </div>
-)
+      {hasGallery && (
+        <Gallery
+          isOpen={isOpen}
+          gallery={gallery}
+          currentItemIndex={currentItemIndex}
+          caseHeight={caseHeight}
+        />
+      )}
+    </React.Fragment>
+  )
+}
+
+const useBreakpoints = createBreakpoints({ XL: 1200, L: 768, S: 350 })
+const getCaseHeight = breakpoint => {
+  switch (breakpoint) {
+    case "XL":
+      return 513
+    default:
+      return 513
+  }
+}
 
 const Projects = ({ projects, isVisible }) => {
   const intl = useIntl()
+  const [openProjectIndex, setOpenProjectIndex] = useState(null)
+  const breakpoint = useBreakpoints()
+  const caseHeight = getCaseHeight(breakpoint)
   return (
     <div
       className={cn(
@@ -81,7 +179,11 @@ const Projects = ({ projects, isVisible }) => {
             project={project.description}
             category={project.category}
             type={project.type}
-            hasGallery
+            gallery={project.gallery}
+            openProjectIndex={openProjectIndex}
+            setOpenProjectIndex={setOpenProjectIndex}
+            projectIndex={projectIndex}
+            caseHeight={caseHeight}
           />
         )
       })}

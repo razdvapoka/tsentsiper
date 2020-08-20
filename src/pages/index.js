@@ -41,6 +41,14 @@ export const query = graphql`
         type
         title
         year
+        gallery {
+          caption
+          image {
+            fluid(maxWidth: 700, quality: 100) {
+              ...GatsbyContentfulFluid_withWebp
+            }
+          }
+        }
       }
     }
   }

@@ -7168,6 +7168,11 @@ fragment-cache@^0.2.1:
   dependencies:
     map-cache "^0.2.2"
 
+framez@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/framez/-/framez-0.4.0.tgz#53a33868533e944270dcabc56b90f9f36a8156ab"
+  integrity sha512-pQiU7HuqRbLkfC+Pq8Rq3ITcGwg9jCCEyrbt01oB7CSIq5dfVeYV+GiR+n5aA6foJ1qtu7ujGoUyYwJ0oBDOTg==
+
 fresh@0.5.2:
   version "0.5.2"
   resolved "https://registry.yarnpkg.com/fresh/-/fresh-0.5.2.tgz#3d8cadd90d976569fa835ab1f8e4b23a105605a7"
