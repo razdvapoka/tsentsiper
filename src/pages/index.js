@@ -2,15 +2,15 @@ import "@/styles/index.styl"
 
 import { FixedBottom } from "react-fixed-bottom"
 import { graphql } from "gatsby"
-import React from "react"
 import { useIntl } from "gatsby-plugin-intl"
+import React from "react"
 
+import { FontsLoadedProvider, useFontsLoaded } from "../fonts-loaded-context"
 import Menu from "../components/menu"
 import Projects from "../components/projects"
 import SEO from "../components/seo"
-import { useFontsLoaded } from "../fonts-loaded-context"
 
-const IndexPage = ({ data: { contentfulPage: pageData }, pageContext }) => {
+const IndexPageInner = ({ pageData, pageContext }) => {
   const intl = useIntl()
   const { fontsLoaded } = useFontsLoaded()
   return (
@@ -28,6 +28,12 @@ const IndexPage = ({ data: { contentfulPage: pageData }, pageContext }) => {
     </div>
   )
 }
+
+const IndexPage = ({ data: { contentfulPage: pageData }, pageContext }) => (
+  <FontsLoadedProvider>
+    <IndexPageInner pageData={pageData} pageContext={pageContext} />
+  </FontsLoadedProvider>
+)
 
 export const query = graphql`
   query MainPage($locale: String) {
