@@ -92,9 +92,9 @@ const ProjectRow = ({
       <div
         ref={ref}
         className={cn(
-          "flex items-start",
+          "flex items-start hover:bg-hoverGrey",
           styles.row,
-          { "hover:bg-hoverGrey active:bg-activeGrey": hasGallery },
+          { "active:bg-activeGrey": hasGallery },
           className
         )}
         {...(hasGallery
