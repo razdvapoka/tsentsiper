@@ -44,8 +44,12 @@ menuInnerOpen()
   @media (max-width: 767px)
     margin-bottom: 2px
 
-.menuHidden
-  transform: translate(-50%, 70px)
+:global(.no-touchevents)
+  .menuHidden
+    transform: translate(-50%, 80px)
+:global(.touchevents)
+  .menuHidden
+    transform: translate(-50%, 130px)
 
 .menuVisible
   transform: translate(-50%, 0)
