@@ -22,7 +22,7 @@ const Gallery = ({ isOpen, gallery, currentItemIndex, caseHeight }) => (
     })}
     style={{ height: isOpen ? caseHeight : 0 }}
   >
-    <div className="flex items-center h-full">
+    <div className={cn("flex items-center h-full", styles.galleryContent)}>
       <div>
         <div className="flex">
           {gallery.map((item, itemIndex) => (
@@ -31,7 +31,9 @@ const Gallery = ({ isOpen, gallery, currentItemIndex, caseHeight }) => (
             </div>
           ))}
         </div>
-        <div className={cn("flex justify-between text-sm", styles.caption)}>
+        <div
+          className={cn("flex justify-between text-caption", styles.caption)}
+        >
           <div>{gallery[currentItemIndex].caption}</div>
           <div>{`${currentItemIndex + 1}/${gallery.length}`}</div>
         </div>
