@@ -1,10 +1,10 @@
 import { animate, easeInOut, updateScroll, withEase, withTime } from "framez"
 import { useIntl } from "gatsby-plugin-intl"
-import Img from "gatsby-image"
 import React, { useState, useRef } from "react"
 import cn from "classnames"
 
 import ArrowRight from "../../icons/arrow-right-s.inline.svg"
+import Gallery from "../gallery"
 import createBreakpoints from "../../hooks/createBreakpoints"
 import styles from "./styles.module.styl"
 import tp from "../../typograf"
@@ -13,33 +13,6 @@ const OFFSET_TOP = 11
 
 const Typograf = ({ children, ...rest }) => (
   <div {...rest} dangerouslySetInnerHTML={{ __html: tp.execute(children) }} />
-)
-
-const Gallery = ({ isOpen, gallery, currentItemIndex, caseHeight }) => (
-  <div
-    className={cn("overflow-hidden", styles.gallery, {
-      [styles.galleryOpen]: isOpen,
-    })}
-    style={{ height: isOpen ? caseHeight : 0 }}
-  >
-    <div className={cn("flex items-center h-full", styles.galleryContent)}>
-      <div>
-        <div className="flex">
-          {gallery.map((item, itemIndex) => (
-            <div key={itemIndex} className={styles.imgBox}>
-              <Img fluid={{ ...item.image.fluid, aspectRatio: 700 / 420 }} />
-            </div>
-          ))}
-        </div>
-        <div
-          className={cn("flex justify-between text-caption", styles.caption)}
-        >
-          <div>{gallery[currentItemIndex].caption}</div>
-          <div>{`${currentItemIndex + 1}/${gallery.length}`}</div>
-        </div>
-      </div>
-    </div>
-  </div>
 )
 
 const ProjectRow = ({
@@ -132,6 +105,7 @@ const ProjectRow = ({
           isOpen={isOpen}
           gallery={gallery}
           currentItemIndex={currentItemIndex}
+          setCurrentItemIndex={setCurrentItemIndex}
           caseHeight={caseHeight}
         />
       )}

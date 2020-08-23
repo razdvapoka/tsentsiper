@@ -17,7 +17,7 @@ const createBreakpoints = (
   })
   const sortedBreakpoints = useMemo(
     () => Object.entries(breakpoints).sort((a, b) => (a[1] >= b[1] ? 1 : -1)),
-    [breakpoints]
+    []
   )
   const result = sortedBreakpoints.reduce((acc, [name, width]) => {
     if (screen >= width) {

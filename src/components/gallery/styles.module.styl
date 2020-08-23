@@ -1,0 +1,49 @@
+.img
+  user-drag: none
+  user-select: none
+
+.imgBox
+  width: 700px
+
+.imgBox + .imgBox
+  margin-left: 24px
+
+.gallery
+  transition: height 0.4s ease-in-out, opacity 0.1s ease-in
+  opacity: 0
+  padding-left: 275px
+  &Open
+    transition: height 0.4s ease-in-out, opacity 0.3s ease-out 0.2s
+    opacity: 1
+  &Content
+    padding-top: 33px
+    padding-bottom: 35px
+  &Inner
+    transition: transform .4s ease-in-out
+
+.caption
+  margin-top: 10px
+  width: 700px
+
+.arrow
+  width: 20px
+  height: 36px
+
+.button
+  top: 33px
+  bottom: 60px
+  &Prev
+    width: 60%
+  &Next
+    width: 40%
+  &NextOnly
+    left: 275px
+    width: calc(100% - 275px)
+
+.play
+  width: 30px
+  height: 36px
+
+.video
+  object-fit: cover
+  object-position: center

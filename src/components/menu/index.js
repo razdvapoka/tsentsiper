@@ -18,7 +18,7 @@ const Menu = ({ description, isVisible }) => {
     <nav
       ref={ref}
       className={cn(
-        "fixed bg-blue text-white text-center",
+        "fixed bg-blue text-white text-center z-50",
         isVisible ? styles.menuVisible : styles.menuHidden,
         styles.menu,
         { [styles.menuOpen]: isOpen }

@@ -54,6 +54,11 @@ export const query = graphql`
               ...GatsbyContentfulFluid_withWebp
             }
           }
+          video {
+            file {
+              url
+            }
+          }
         }
       }
     }
