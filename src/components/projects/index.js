@@ -163,7 +163,7 @@ const Projects = ({ projects, isVisible }) => {
       )}
     >
       <ProjectRow
-        className="text-grey"
+        className="text-grey pointer-events-none"
         number={intl.formatMessage({ id: "number" })}
         client={intl.formatMessage({ id: "client" })}
         project={intl.formatMessage({ id: "project" })}
