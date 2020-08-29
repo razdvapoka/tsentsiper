@@ -33,7 +33,7 @@ const Menu = ({ description, isVisible }) => {
         <div className={cn("opacity-0", styles.menuUpper)}>
           <a
             className={cn(
-              "block mt-1 py-1 text-purple hover:text-white",
+              "block mt-1 py-1 text-purple hover:text-white cursor-default",
               styles.contact
             )}
             href="mailto:hello@tsentsiper.com"
@@ -44,7 +44,7 @@ const Menu = ({ description, isVisible }) => {
             {({ languages, language }) => (
               <button
                 className={cn(
-                  "w-full py-1 text-purple hover:text-white",
+                  "w-full py-1 text-purple hover:text-white cursor-default",
                   styles.language
                 )}
                 onClick={() => {
