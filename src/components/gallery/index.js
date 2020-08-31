@@ -1,80 +1,43 @@
-import React, { useRef, useState, useEffect } from "react"
 import Img from "gatsby-image"
+import React, { useState } from "react"
 import cn from "classnames"
+
 import ArrowLeftXL from "../../icons/arrow-left-xl.inline.svg"
 import ArrowRightXL from "../../icons/arrow-right-xl.inline.svg"
-import Play from "../../icons/play.inline.svg"
-
+import VideoItem from "./video-item"
 import styles from "./styles.module.styl"
 
 const ASPECT_RATIO = 700 / 420
-
-const VideoItem = ({ src, setCaption }) => {
-  const ref = useRef(null)
-  const [isPlaying, setIsPlaying] = useState(false)
-
-  const play = () => ref.current.play()
-  const pause = () => ref.current.pause()
-
-  const setPlayOn = () => setIsPlaying(true)
-  const setPlayOff = () => setIsPlaying(false)
-
-  useEffect(() => {
-    if (ref.current) {
-      const videoRef = ref
-      videoRef.current.addEventListener("pause", setPlayOff)
-      videoRef.current.addEventListener("play", setPlayOn)
-      return () => {
-        videoRef.current.removeEventListener("pause", setPlayOff)
-        videoRef.current.removeEventListener("play", setPlayOn)
-      }
-    }
-  }, [])
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (ref.current.readyState > 0) {
-        const minutes = parseInt(ref.current.duration / 60, 10)
-        const seconds = Math.round(ref.current.duration % 60)
-        setCaption(`${minutes}:${seconds}`)
-        clearInterval(interval)
-      }
-    }, 200)
-    return () => {
-      clearInterval(interval)
-    }
-  }, [setCaption])
-
-  return (
-    <div className="relative h-full">
-      {!isPlaying && (
-        <button
-          className="absolute left-0 top-0 w-full h-full flex items-center
-                    justify-center z-20"
-          onClick={play}
-        >
-          <Play className={styles.play} />
-        </button>
-      )}
-      <video
-        onClick={pause}
-        ref={ref}
-        className={cn("h-full", styles.video)}
-        src={src}
-        loop
-      ></video>
-    </div>
-  )
-}
 
 const Gallery = ({
   isOpen,
   gallery,
   currentItemIndex,
-  setCurrentItemIndex,
+  setCurrentItemIndex: _setCurrentItemIndex,
   caseHeight,
 }) => {
   const [videoCaption, setVideoCaption] = useState(null)
+  const [cursor, setCursor] = useState(null)
+  const handleMouseMove = (e, component) => {
+    setCursor({
+      x: e.clientX,
+      y: e.clientY,
+      component,
+    })
+  }
+
+  const setCurrentItemIndex = index => {
+    _setCurrentItemIndex(index)
+    if (index === gallery.length - 1 || index === 0) {
+      setCursor(null)
+    }
+  }
+
+  const currentItem = gallery[currentItemIndex]
+  const hasNextItem =
+    currentItemIndex !== gallery.length - 1 && gallery.length > 1
+  const hasPrevItem = currentItemIndex !== 0
+
   return (
     <div
       className={cn("overflow-hidden relative", styles.gallery, {
@@ -82,62 +45,77 @@ const Gallery = ({
       })}
       style={{ height: isOpen ? caseHeight : 0 }}
     >
-      {currentItemIndex !== 0 && (
+      {cursor && (
+        <cursor.component
+          className={cn(styles.arrow, "fixed z-50 pointer-events-none")}
+          style={{ left: cursor.x, top: cursor.y }}
+        />
+      )}
+      {hasPrevItem && (
         <button
           className={cn(
-            "absolute left-0 flex items-center justify-center text-white z-10",
+            "absolute left-0 text-white z-10",
             styles.button,
             styles.buttonPrev
           )}
           onClick={() => setCurrentItemIndex(currentItemIndex - 1)}
-        >
-          <ArrowLeftXL className={styles.arrow} />
-        </button>
+          onMouseMove={e => handleMouseMove(e, ArrowLeftXL)}
+          onMouseLeave={() => setCursor(null)}
+        />
       )}
-      {currentItemIndex !== gallery.length - 1 && gallery.length > 1 && (
+      {hasNextItem && (
         <button
           className={cn(
-            "absolute right-0 flex items-center justify-center text-white z-10",
+            "absolute right-0 text-white z-10",
             styles.button,
             currentItemIndex === 0 ? styles.buttonNextOnly : styles.buttonNext
           )}
           onClick={() => setCurrentItemIndex(currentItemIndex + 1)}
-        >
-          <ArrowRightXL className={styles.arrow} />
-        </button>
+          onMouseMove={e => handleMouseMove(e, ArrowRightXL)}
+          onMouseLeave={() => setCursor(null)}
+        />
       )}
       <div className={cn("flex h-full", styles.galleryContent)}>
         <div>
           <div
-            className={cn("flex", styles.galleryInner)}
+            className={cn("relative flex", styles.galleryInner)}
             style={{
-              transform: `translateX(-${
-                currentItemIndex * 700 + 24 * currentItemIndex
-              }px)`,
+              left: `-${currentItemIndex * 700 + 24 * currentItemIndex}px`,
             }}
           >
-            {gallery.map((item, itemIndex) => (
-              <div key={itemIndex} className={styles.imgBox}>
-                {item.video ? (
-                  <VideoItem
-                    src={item.video.file.url}
-                    setCaption={setVideoCaption}
-                  />
-                ) : (
-                  <Img
-                    className={styles.img}
-                    fluid={{ ...item.image.fluid, aspectRatio: ASPECT_RATIO }}
-                  />
-                )}
-              </div>
-            ))}
+            {gallery.map((item, itemIndex) => {
+              const isCurrentItem = itemIndex === currentItemIndex
+              return (
+                <div key={itemIndex} className={styles.imgBox}>
+                  {item.video ? (
+                    <div
+                      className={cn({ "relative z-50": isCurrentItem })}
+                      style={{ width: 700, height: 420 }}
+                    >
+                      <VideoItem
+                        src={item.video.file.url}
+                        setCaption={setVideoCaption}
+                        isCurrentItem={isCurrentItem}
+                      />
+                    </div>
+                  ) : (
+                    <Img
+                      className={styles.img}
+                      fluid={{ ...item.image.fluid, aspectRatio: ASPECT_RATIO }}
+                    />
+                  )}
+                </div>
+              )
+            })}
           </div>
           <div
             className={cn("flex justify-between text-caption", styles.caption)}
           >
-            <div>{gallery[currentItemIndex].caption}</div>
+            <div>{currentItem.caption}</div>
             <div>
-              {videoCaption || `${currentItemIndex + 1}/${gallery.length}`}
+              {currentItem.video
+                ? videoCaption
+                : `${currentItemIndex + 1}/${gallery.length}`}
             </div>
           </div>
         </div>
