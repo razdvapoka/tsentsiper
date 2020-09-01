@@ -20,6 +20,7 @@ module.exports = {
       purple: "rgba(153,170,255,1)",
       palePurple: "rgba(153,170,255,0.4)",
       hoverGrey: "rgba(235,235,240,1)",
+      hoverPaleGrey: "rgba(242, 242, 247, 1)",
       activeGrey: "rgba(225,225,232,1)",
     },
     spacing,

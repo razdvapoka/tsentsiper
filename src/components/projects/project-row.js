@@ -85,9 +85,12 @@ const ProjectRow = ({
       <div
         ref={ref}
         className={cn(
-          "flex items-start hover:bg-hoverGrey",
+          "flex items-start",
+          hasGallery
+            ? "hover:bg-hoverGrey active:bg-activeGrey"
+            : "hover:bg-hoverPaleGrey",
+          { [styles.rowEmpty]: !hasGallery },
           styles.row,
-          { "active:bg-activeGrey": hasGallery },
           className
         )}
         {...(hasGallery

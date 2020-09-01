@@ -28,7 +28,9 @@ const Menu = ({ description, isVisible }) => {
       <div className={cn("absolute", styles.logoBox)}>
         <Logo />
       </div>
-      <div>{intl.formatMessage({ id: "tsentsiper" })}</div>
+      <div className="cursor-default">
+        {intl.formatMessage({ id: "tsentsiper" })}
+      </div>
       <div className={cn("h-0 overflow-hidden", styles.menuInner)}>
         <div className={cn("opacity-0", styles.menuUpper)}>
           <a
@@ -58,7 +60,10 @@ const Menu = ({ description, isVisible }) => {
           <hr className="border-palePurple my-4" />
         </div>
         <div
-          className={cn("opacity-0 px-2", styles.menuDescription)}
+          className={cn(
+            "opacity-0 px-2 cursor-default",
+            styles.menuDescription
+          )}
           onClick={close}
         >
           {description}
