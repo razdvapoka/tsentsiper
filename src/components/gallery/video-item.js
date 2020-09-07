@@ -3,7 +3,7 @@ import Play from "../../icons/play.inline.svg"
 import styles from "./styles.module.styl"
 import cn from "classnames"
 
-const VideoItem = ({ src, setCaption, isCurrentItem }) => {
+const VideoItem = ({ src, poster, setCaption, isCurrentItem }) => {
   const ref = useRef(null)
   const [isPlaying, setIsPlaying] = useState(false)
 
@@ -55,7 +55,7 @@ const VideoItem = ({ src, setCaption, isCurrentItem }) => {
   return (
     <div
       className={cn("relative w-full h-0", styles.videoBox, {
-        "relative cursor-pointer": isCurrentItem,
+        "relative cursor-pointer z-50": isCurrentItem,
       })}
     >
       {!isPlaying && (
@@ -68,7 +68,10 @@ const VideoItem = ({ src, setCaption, isCurrentItem }) => {
         ref={ref}
         className={cn("absolute left-0 top-0 w-full h-full", styles.video)}
         src={src}
+        poster={poster}
         loop
+        muted=""
+        playsInline
       ></video>
     </div>
   )

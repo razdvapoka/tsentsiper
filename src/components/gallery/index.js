@@ -1,6 +1,7 @@
 import Img from "gatsby-image"
 import React, { useState } from "react"
 import cn from "classnames"
+import { useSwipeable } from "react-swipeable"
 
 import ArrowLeftXL from "../../icons/arrow-left-xl.inline.svg"
 import ArrowRightXL from "../../icons/arrow-right-xl.inline.svg"
@@ -53,11 +54,11 @@ const getGalleryProps = breakpoint => {
 
 const Buttons = ({
   itemCount,
+  hasNextItem,
+  hasPrevItem,
   currentItemIndex,
   setCurrentItemIndex: _setCurrentItemIndex,
-  leftPad,
   isVideo,
-  galleryProps,
 }) => {
   const [cursor, setCursor] = useState(null)
   const handleMouseMove = (e, component) => {
@@ -67,8 +68,6 @@ const Buttons = ({
       component,
     })
   }
-  const hasNextItem = currentItemIndex !== itemCount - 1 && itemCount > 1
-  const hasPrevItem = currentItemIndex !== 0
 
   const setCurrentItemIndex = index => {
     _setCurrentItemIndex(index)
@@ -139,12 +138,32 @@ const Caption = ({ currentItemIndex, gallery, videoCaption, slideWidth }) => {
   )
 }
 
-const GalleryItem = ({ item, isCurrentItem, setVideoCaption, slideWidth }) => {
+const GalleryItem = ({
+  item,
+  isCurrentItem,
+  setVideoCaption,
+  slideWidth,
+  hasPrevItem,
+  hasNextItem,
+  setCurrentItemIndex,
+  currentItemIndex,
+}) => {
+  const handlers = useSwipeable({
+    onSwipedRight: () =>
+      hasPrevItem && setCurrentItemIndex(currentItemIndex - 1),
+    onSwipedLeft: () =>
+      hasNextItem && setCurrentItemIndex(currentItemIndex + 1),
+    preventDefaultTouchmoveEvent: true,
+    trackMouse: true,
+    trackTouch: true,
+  })
+
   return (
-    <div className={styles.slide} style={{ width: slideWidth }}>
+    <div className={styles.slide} style={{ width: slideWidth }} {...handlers}>
       {item.video ? (
         <VideoItem
           src={item.video.file.url}
+          poster={item.image.fluid.src}
           setCaption={setVideoCaption}
           isCurrentItem={isCurrentItem}
         />
@@ -178,7 +197,10 @@ const Gallery = React.forwardRef(
           ${currentItemIndex} * ${galleryProps.gap}
       )
     `
+    const itemCount = gallery.length
     const currentItem = gallery[currentItemIndex]
+    const hasNextItem = currentItemIndex !== itemCount - 1 && itemCount > 1
+    const hasPrevItem = currentItemIndex !== 0
 
     return (
       <div
@@ -191,12 +213,12 @@ const Gallery = React.forwardRef(
         }}
       >
         <Buttons
-          itemCount={gallery.length}
+          itemCount={itemCount}
+          hasNextItem={hasNextItem}
+          hasPrevItem={hasPrevItem}
           currentItemIndex={currentItemIndex}
           setCurrentItemIndex={setCurrentItemIndex}
-          leftPad={galleryProps.leftPad}
           isVideo={!!currentItem.video}
-          galleryProps={galleryProps}
         />
         <div ref={ref} className={cn("flex", styles.galleryContent)}>
           <div>
@@ -213,6 +235,10 @@ const Gallery = React.forwardRef(
                   isCurrentItem={itemIndex === currentItemIndex}
                   setVideoCaption={setVideoCaption}
                   slideWidth={slideWidth}
+                  hasNextItem={hasNextItem}
+                  hasPrevItem={hasPrevItem}
+                  currentItemIndex={currentItemIndex}
+                  setCurrentItemIndex={setCurrentItemIndex}
                 />
               ))}
             </div>
