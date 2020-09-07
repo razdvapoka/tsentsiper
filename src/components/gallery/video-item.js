@@ -9,6 +9,13 @@ const VideoItem = ({ src, setCaption, isCurrentItem }) => {
 
   const play = () => ref.current.play()
   const pause = () => ref.current.pause()
+  const toggle = () => {
+    if (isPlaying) {
+      pause()
+    } else {
+      play()
+    }
+  }
 
   const setPlayOn = () => setIsPlaying(true)
   const setPlayOff = () => setIsPlaying(false)
@@ -46,22 +53,20 @@ const VideoItem = ({ src, setCaption, isCurrentItem }) => {
   }, [setCaption])
 
   return (
-    <div className="relative h-full w-full">
+    <div
+      className={cn("relative w-full h-0", styles.videoBox, {
+        "relative cursor-pointer": isCurrentItem,
+      })}
+    >
       {!isPlaying && (
-        <button
-          className={cn(
-            "absolute left-0 top-0 w-full h-full flex items-center justify-center",
-            { "z-20": isCurrentItem }
-          )}
-          onClick={play}
-        >
-          <Play className={styles.play} />
-        </button>
+        <Play
+          className={cn("absolute z-10 pointer-events-none", styles.play)}
+        />
       )}
       <video
-        onClick={pause}
+        onClick={toggle}
         ref={ref}
-        className={cn("h-full", styles.video)}
+        className={cn("absolute left-0 top-0 w-full h-full", styles.video)}
         src={src}
         loop
       ></video>

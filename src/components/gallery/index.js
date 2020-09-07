@@ -6,13 +6,58 @@ import ArrowLeftXL from "../../icons/arrow-left-xl.inline.svg"
 import ArrowRightXL from "../../icons/arrow-right-xl.inline.svg"
 import VideoItem from "./video-item"
 import styles from "./styles.module.styl"
+import createBreakpoints from "../../hooks/createBreakpoints"
 
 const ASPECT_RATIO = 700 / 420
+
+const useBreakpoints = createBreakpoints({
+  XL: 1440,
+  L: 1200,
+  M: 870,
+  S: 768,
+  XS: 320,
+})
+
+const getGalleryProps = breakpoint => {
+  switch (breakpoint) {
+    case "XL":
+      return {
+        gap: "0px",
+        leftPad: "0px",
+        slideWidth: "881px",
+      }
+    case "L":
+      return {
+        slideWidth: "878px",
+        gap: "24px",
+        leftPad: "calc(275px + (100vw - 1200px) / 2)",
+      }
+    case "M":
+      return {
+        gap: "24px",
+        leftPad: "275px",
+      }
+    case "S":
+      return {
+        gap: "24px",
+        leftPad: "263px",
+      }
+    case "XS":
+    default:
+      return {
+        gap: "16px",
+        leftPad: "24px",
+      }
+  }
+}
 
 const Buttons = ({
   itemCount,
   currentItemIndex,
   setCurrentItemIndex: _setCurrentItemIndex,
+  leftPad,
+  isVideo,
+  galleryProps,
 }) => {
   const [cursor, setCursor] = useState(null)
   const handleMouseMove = (e, component) => {
@@ -45,7 +90,11 @@ const Buttons = ({
           className={cn(
             "absolute left-0 text-white z-10",
             styles.button,
-            styles.buttonPrev
+            isVideo
+              ? styles.buttonPrevVideo
+              : currentItemIndex === itemCount - 1
+              ? styles.buttonPrevOnly
+              : styles.buttonPrev
           )}
           onClick={() => setCurrentItemIndex(currentItemIndex - 1)}
           onMouseMove={e => handleMouseMove(e, ArrowLeftXL)}
@@ -57,7 +106,11 @@ const Buttons = ({
           className={cn(
             "absolute right-0 text-white z-10",
             styles.button,
-            currentItemIndex === 0 ? styles.buttonNextOnly : styles.buttonNext
+            isVideo
+              ? styles.buttonNextVideo
+              : currentItemIndex === 0
+              ? styles.buttonNextOnly
+              : styles.buttonNext
           )}
           onClick={() => setCurrentItemIndex(currentItemIndex + 1)}
           onMouseMove={e => handleMouseMove(e, ArrowRightXL)}
@@ -68,34 +121,33 @@ const Buttons = ({
   )
 }
 
-const Caption = ({ currentItemIndex, gallery, videoCaption }) => {
+const Caption = ({ currentItemIndex, gallery, videoCaption, slideWidth }) => {
   const currentItem = gallery[currentItemIndex]
+  const caption = `${currentItem.caption}${
+    currentItem.video ? ` (${videoCaption})` : ""
+  }`
+  const counter = `${currentItemIndex + 1}/${gallery.length}`
+
   return (
-    <div className={cn("flex justify-between text-caption", styles.caption)}>
-      <div className="cursor-default">{`${currentItem.caption}${
-        currentItem.video ? ` (${videoCaption})` : ""
-      }`}</div>
-      <div className="cursor-default">{`${currentItemIndex + 1}/${
-        gallery.length
-      }`}</div>
+    <div
+      className={cn("flex justify-between text-caption", styles.caption)}
+      style={{ width: slideWidth }}
+    >
+      <div className="cursor-default">{caption}</div>
+      <div className="cursor-default">{counter}</div>
     </div>
   )
 }
 
-const GalleryItem = ({ item, isCurrentItem, setVideoCaption }) => {
+const GalleryItem = ({ item, isCurrentItem, setVideoCaption, slideWidth }) => {
   return (
-    <div className={styles.imgBox}>
+    <div className={styles.slide} style={{ width: slideWidth }}>
       {item.video ? (
-        <div
-          className={cn({ "relative z-50": isCurrentItem })}
-          style={{ width: 700, height: 420 }}
-        >
-          <VideoItem
-            src={item.video.file.url}
-            setCaption={setVideoCaption}
-            isCurrentItem={isCurrentItem}
-          />
-        </div>
+        <VideoItem
+          src={item.video.file.url}
+          setCaption={setVideoCaption}
+          isCurrentItem={isCurrentItem}
+        />
       ) : (
         <Img
           className={styles.img}
@@ -115,7 +167,17 @@ const Gallery = React.forwardRef(
     ref
   ) => {
     const [videoCaption, setVideoCaption] = useState(null)
-
+    const bp = useBreakpoints()
+    const galleryProps = getGalleryProps(bp)
+    const slideWidth = galleryProps.slideWidth
+      ? galleryProps.slideWidth
+      : `calc(100vw - ${galleryProps.leftPad} - 2 * ${galleryProps.gap})`
+    const galleryContentShift = `
+      calc(
+          ${-currentItemIndex} * ${slideWidth} -
+          ${currentItemIndex} * ${galleryProps.gap}
+      )
+    `
     const currentItem = gallery[currentItemIndex]
 
     return (
@@ -123,19 +185,25 @@ const Gallery = React.forwardRef(
         className={cn("overflow-hidden relative", styles.gallery, {
           [styles.galleryOpen]: isOpen,
         })}
-        style={{ height: isOpen ? caseHeight : 0 }}
+        style={{
+          height: isOpen ? caseHeight : 0,
+          paddingLeft: galleryProps.leftPad,
+        }}
       >
         <Buttons
           itemCount={gallery.length}
           currentItemIndex={currentItemIndex}
           setCurrentItemIndex={setCurrentItemIndex}
+          leftPad={galleryProps.leftPad}
+          isVideo={!!currentItem.video}
+          galleryProps={galleryProps}
         />
         <div ref={ref} className={cn("flex", styles.galleryContent)}>
           <div>
             <div
               className={cn("relative flex", styles.galleryInner)}
               style={{
-                left: `-${currentItemIndex * 700 + 24 * currentItemIndex}px`,
+                transform: `translateX(${galleryContentShift})`,
               }}
             >
               {gallery.map((item, itemIndex) => (
@@ -144,6 +212,7 @@ const Gallery = React.forwardRef(
                   item={item}
                   isCurrentItem={itemIndex === currentItemIndex}
                   setVideoCaption={setVideoCaption}
+                  slideWidth={slideWidth}
                 />
               ))}
             </div>
@@ -151,6 +220,7 @@ const Gallery = React.forwardRef(
               currentItemIndex={currentItemIndex}
               gallery={gallery}
               videoCaption={videoCaption}
+              slideWidth={slideWidth}
             />
           </div>
         </div>

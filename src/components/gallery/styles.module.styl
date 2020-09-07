@@ -2,16 +2,19 @@
   user-drag: none
   user-select: none
 
-.imgBox
-  width: 700px
-
-.imgBox + .imgBox
+.slide + .slide
   margin-left: 24px
+  @media (max-width: 767px)
+    margin-left: 16px
+  @media (min-width: 1440px)
+    margin-left: 0
 
 .gallery
   transition: height 0.4s ease-in-out, opacity 0.1s ease-in
   opacity: 0
-  padding-left: 275px
+  @media (min-width: 1440px)
+    margin-left: 275px
+    margin-right: 45px
   &Open
     transition: height 0.4s ease-in-out, opacity 0.3s ease-out 0.2s
     opacity: 1
@@ -19,11 +22,13 @@
     padding-top: 33px
     padding-bottom: 35px
   &Inner
-    transition: left .4s ease-in-out
+    transition: transform .4s ease-in-out
+  @media (min-width: 1201px) and (max-width: 1439px)
+    width: 100vw
+    margin-left: calc(-1 * (100vw - 1200px) / 2);
 
 .caption
   margin-top: 10px
-  width: 700px
 
 .arrow
   width: 20px
@@ -38,18 +43,120 @@
   top: 33px
   bottom: 60px
   cursor: none
-  &Prev
-    width: 60%
-  &Next
-    width: 40%
-  &NextOnly
-    left: 275px
-    width: calc(100% - 275px)
+
+// 24px is gallery's left padding
+// 2 * 16px is gallery's gap and next slide's piece
+.buttonPrev
+  width: calc((100vw - 24px - 2 * 16px) / 2 + 24px)
+.buttonPrevOnly
+  width: calc(100vw - 2 * 16px)
+.buttonPrevVideo
+  width: calc((100vw - 24px - 2 * 16px) / 4 + 24px) // 1/4 of slide'w width + left padding
+
+.buttonNext
+  width: calc(((100vw - 24px) - 2 * 16px) / 2 + 2 * 16px) // half a slide + gap + next slide's piece
+  left: calc(24px + ((100vw - 24px) - 2 * 16px) / 2) // left padding + half a slide
+.buttonNextOnly
+  width: calc(100% - 24px)
+  left: 24px
+.buttonNextVideo
+  width: calc(((100vw - 24px) - 2 * 16px) / 4 + 2 * 16px) // quarter a slide + gap + next slide's piece
+  left: calc(24px + ((100vw - 24px) - 32px) * 3 / 4) // left padding + 3/4 a slide
+
+// 263px is gallery's left padding
+// 2 * 24px is gallery's gap and next slide's piece
+@media (min-width: 768px)
+  .buttonPrev
+    width: calc(((100vw - 263px) - 2 * 24px) / 2 + 263px)
+  .buttonPrevOnly
+    width: calc(100vw - 2 * 24px)
+  .buttonPrevVideo
+    width: calc(((100vw - 263px) - 2 * 24px) / 4 + 263px) // 1/4 of slide'w width + left padding
+
+  .buttonNext
+    width: calc((100vw - 263px - 2 * 24px) / 2 + 24px * 2)
+    left: calc(263px + (100vw - 263px - 2 * 24px) / 2)
+  .buttonNextOnly
+    width: calc(100% - 24px)
+    left: 263px
+  .buttonNextVideo
+    width: calc((100vw - 263px - 2 * 24px) / 4 + 24px * 2)
+    left: calc(263px + (100vw - 263px - 2 * 24px) * 3 / 4)
+
+// 275px is gallery's left padding
+// 2 * 24px is gallery's gap and next slide's piece
+@media (min-width: 870px)
+  .buttonPrev
+    width: calc(((100vw - 275px) - 2 * 24px) / 2 + 275px)
+  .buttonPrevOnly
+    width: calc(100vw - 2 * 24px)
+  .buttonPrevVideo
+    width: calc(((100vw - 275px) - 2 * 24px) / 4 + 275px) // 1/4 of slide'w width + left padding
+
+  .buttonNext
+    width: calc((100vw - 275px - 2 * 24px) / 2 + 24px * 2)
+    left: calc(275px + (100vw - 275px - 2 * 24px) / 2)
+  .buttonNextOnly
+    width calc(100% - 24px)
+    left 275px
+  .buttonNextVideo
+    width: calc((100vw - 275px - 2 * 24px) / 4 + 24px * 2)
+    left: calc(275px + (100vw - 275px - 2 * 24px) * 3 / 4)
+
+
+// 275px is gallery's left padding
+// (100vw - 1200px) / 2 is left padding
+// 878px is slide's fixed width
+@media (min-width: 1200px)
+  .buttonPrev
+    width: calc((100vw - 1200px) / 2 + 275px + 878px / 2)
+  .buttonPrevOnly
+    width: calc(275px + (100vw - 1200px) / 2 + 878px)
+  .buttonPrevVideo
+    width: calc((100vw - 1200px) / 2 + 275px + 878px / 4)
+
+  .buttonNext
+    width: calc(878px / 2 + (100vw - 1200px) / 2 + 24px * 2)
+    left: calc((100vw - 1200px) / 2 + 275px + 878px / 2)
+  .buttonNextOnly
+    width: calc(878px + (100vw - 1200px) / 2 + 24px * 2)
+    left: calc((100vw - 1200px) / 2 + 275px)
+  .buttonNextVideo
+    width: calc(878px / 4 + (100vw - 1200px) / 2 + 24px * 2)
+    left: calc((100vw - 1200px) / 2 + 275px + 878px * 3 / 4)
+
+@media (min-width: 1440px)
+  .buttonPrev
+    width: 50%
+  .buttonPrevOnly
+    width: 100%
+  .buttonPrevVideo
+    width: 25%
+
+  .buttonNext
+    width: 50%
+    left: 50%
+  .buttonNextOnly
+    width: 100%
+    left: 0
+  .buttonNextVideo
+    width: 25%
+    left: 75%
+
+// :global(.touchevents)
+//   .button
+//     display: none
 
 .play
   width: 30px
   height: 36px
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
 
 .video
   object-fit: cover
   object-position: center
+
+.videoBox
+  padding-top: (420 / 700 * 100%)

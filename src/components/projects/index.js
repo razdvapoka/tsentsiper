@@ -3,18 +3,7 @@ import React, { useState } from "react"
 import cn from "classnames"
 
 import ProjectRow from "./project-row"
-// import createBreakpoints from "../../hooks/createBreakpoints"
 import styles from "./styles.module.styl"
-
-// const useBreakpoints = createBreakpoints({ XL: 1200, L: 768, S: 350 })
-// const getCaseHeight = breakpoint => {
-//   switch (breakpoint) {
-//     case "XL":
-//       return 513
-//     default:
-//       return 513
-//   }
-// }
 
 const Projects = ({ projects, isVisible }) => {
   const intl = useIntl()
