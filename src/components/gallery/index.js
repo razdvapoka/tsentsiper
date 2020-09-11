@@ -46,7 +46,7 @@ const getGalleryProps = breakpoint => {
     case "XS":
     default:
       return {
-        gap: "16px",
+        gap: "12px",
         leftPad: "24px",
       }
   }
@@ -133,7 +133,7 @@ const Caption = ({ currentItemIndex, gallery, videoCaption, slideWidth }) => {
       style={{ width: slideWidth }}
     >
       <div className="cursor-default">{caption}</div>
-      <div className="cursor-default">{counter}</div>
+      {gallery.length > 1 && <div className="cursor-default">{counter}</div>}
     </div>
   )
 }

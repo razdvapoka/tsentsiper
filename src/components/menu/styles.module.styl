@@ -12,12 +12,12 @@ menuInnerOpen()
         transition: opacity .3s ease-out .1s
 
 .menu
-  bottom: 24px
+  bottom: 16px
   border-radius: 24px
   width: 210px
   padding: 13px 16px 18px
   left: 50%
-  transition: transform .3s cubic-bezier(0, 0, .35, 1) .5s, opacity .1s ease-out .5s
+  transition: bottom .4s cubic-bezier(.25, .1, .25, 1), transform .3s cubic-bezier(0, 0, .35, 1) .5s, opacity .1s ease-out .5s
   box-shadow: 0 8px 16px -10px #2A2AEA;
   @media (max-width: 767px)
     width: 264px
@@ -33,11 +33,12 @@ menuInnerOpen()
 
 :global(.no-touchevents)
   .menu:hover
-      menuInnerOpen()
+    bottom: 24px;
+    menuInnerOpen()
 
 :global(.touchevents)
   .menuOpen
-      menuInnerOpen()
+    menuInnerOpen()
 
 .menuDescription
   margin-bottom: 5px

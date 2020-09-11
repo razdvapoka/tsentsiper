@@ -18,12 +18,12 @@ const IndexPageInner = ({ pageData, pageContext }) => {
       <SEO
         lang={pageContext.language}
         title={intl.formatMessage({ id: "tsentsiper" })}
-        description={pageData.description}
+        description={pageData.seoDescription}
         url={intl.formatMessage({ id: "url" })}
       />
       <Projects isVisible={fontsLoaded} projects={pageData.projects} />
       <FixedBottom>
-        <Menu isVisible={fontsLoaded} description={pageData.description} />
+        <Menu isVisible={fontsLoaded} description={pageData.menuAbout} />
       </FixedBottom>
     </div>
   )
@@ -38,13 +38,14 @@ const IndexPage = ({ data: { contentfulPage: pageData }, pageContext }) => (
 export const query = graphql`
   query MainPage($locale: String) {
     contentfulPage(title: { eq: "main" }, node_locale: { eq: $locale }) {
-      description
       title
+      menuAbout
+      seoDescription
       projects {
         category
-        description
         id
         type
+        description
         title
         year
         gallery {

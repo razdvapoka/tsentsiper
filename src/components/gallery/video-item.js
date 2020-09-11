@@ -9,7 +9,9 @@ const VideoItem = ({ src, poster, setCaption, isCurrentItem }) => {
 
   const play = () => ref.current.play()
   const pause = () => ref.current.pause()
-  const toggle = () => {
+  const toggle = e => {
+    e.stopPropagation()
+    e.preventDefault()
     if (isPlaying) {
       pause()
     } else {
@@ -72,6 +74,7 @@ const VideoItem = ({ src, poster, setCaption, isCurrentItem }) => {
         loop
         muted=""
         playsInline
+        controls={isPlaying}
       ></video>
     </div>
   )

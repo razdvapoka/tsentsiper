@@ -2,10 +2,13 @@
   user-drag: none
   user-select: none
 
+.slide
+  -webkit-transform: translate3d(0, 0, 0)
+
 .slide + .slide
   margin-left: 24px
   @media (max-width: 767px)
-    margin-left: 16px
+    margin-left: 12px
   @media (min-width: 1440px)
     margin-left: 0
 
@@ -23,6 +26,7 @@
     padding-bottom: 35px
   &Inner
     transition: transform .4s ease-in-out
+    -webkit-backface-visibility: hidden
   @media (min-width: 1201px) and (max-width: 1439px)
     width: 100vw
     margin-left: calc(-1 * (100vw - 1200px) / 2);
@@ -47,21 +51,25 @@
 // 24px is gallery's left padding
 // 2 * 16px is gallery's gap and next slide's piece
 .buttonPrev
-  width: calc((100vw - 24px - 2 * 16px) / 2 + 24px)
+  width: calc((100vw - 24px - 2 * 12px) / 2 + 24px)
 .buttonPrevOnly
-  width: calc(100vw - 2 * 16px)
+  width: calc(100vw - 2 * 12px)
 .buttonPrevVideo
-  width: calc((100vw - 24px - 2 * 16px) / 4 + 24px) // 1/4 of slide'w width + left padding
+  width: calc((100vw - 24px - 2 * 12px) / 4 + 24px) // 1/4 of slide'w width + left padding
+  top: 70px;
+  bottom: 130px
 
 .buttonNext
-  width: calc(((100vw - 24px) - 2 * 16px) / 2 + 2 * 16px) // half a slide + gap + next slide's piece
-  left: calc(24px + ((100vw - 24px) - 2 * 16px) / 2) // left padding + half a slide
+  width: calc(((100vw - 24px) - 2 * 12px) / 2 + 2 * 12px) // half a slide + gap + next slide's piece
+  left: calc(24px + ((100vw - 24px) - 2 * 12px) / 2) // left padding + half a slide
 .buttonNextOnly
   width: calc(100% - 24px)
   left: 24px
 .buttonNextVideo
-  width: calc(((100vw - 24px) - 2 * 16px) / 4 + 2 * 16px) // quarter a slide + gap + next slide's piece
-  left: calc(24px + ((100vw - 24px) - 32px) * 3 / 4) // left padding + 3/4 a slide
+  width: calc(((100vw - 24px) - 2 * 12px) / 4 + 2 * 12px) // quarter a slide + gap + next slide's piece
+  left: calc(24px + ((100vw - 24px) - 2 * 12px) * 3 / 4) // left padding + 3/4 a slide
+  top: 70px;
+  bottom: 130px
 
 // 263px is gallery's left padding
 // 2 * 24px is gallery's gap and next slide's piece
@@ -72,6 +80,8 @@
     width: calc(100vw - 2 * 24px)
   .buttonPrevVideo
     width: calc(((100vw - 263px) - 2 * 24px) / 4 + 263px) // 1/4 of slide'w width + left padding
+    top: 70px;
+    bottom: 130px
 
   .buttonNext
     width: calc((100vw - 263px - 2 * 24px) / 2 + 24px * 2)
@@ -82,6 +92,8 @@
   .buttonNextVideo
     width: calc((100vw - 263px - 2 * 24px) / 4 + 24px * 2)
     left: calc(263px + (100vw - 263px - 2 * 24px) * 3 / 4)
+    bottom: 130px
+    top: 70px;
 
 // 275px is gallery's left padding
 // 2 * 24px is gallery's gap and next slide's piece
@@ -92,6 +104,8 @@
     width: calc(100vw - 2 * 24px)
   .buttonPrevVideo
     width: calc(((100vw - 275px) - 2 * 24px) / 4 + 275px) // 1/4 of slide'w width + left padding
+    bottom: 130px
+    top: 70px;
 
   .buttonNext
     width: calc((100vw - 275px - 2 * 24px) / 2 + 24px * 2)
@@ -102,6 +116,8 @@
   .buttonNextVideo
     width: calc((100vw - 275px - 2 * 24px) / 4 + 24px * 2)
     left: calc(275px + (100vw - 275px - 2 * 24px) * 3 / 4)
+    bottom: 130px
+    top: 70px;
 
 
 // 275px is gallery's left padding
@@ -114,6 +130,8 @@
     width: calc(275px + (100vw - 1200px) / 2 + 878px)
   .buttonPrevVideo
     width: calc((100vw - 1200px) / 2 + 275px + 878px / 4)
+    bottom: 130px
+    top: 70px;
 
   .buttonNext
     width: calc(878px / 2 + (100vw - 1200px) / 2 + 24px * 2)
@@ -124,6 +142,8 @@
   .buttonNextVideo
     width: calc(878px / 4 + (100vw - 1200px) / 2 + 24px * 2)
     left: calc((100vw - 1200px) / 2 + 275px + 878px * 3 / 4)
+    bottom: 130px
+    top: 70px;
 
 @media (min-width: 1440px)
   .buttonPrev
@@ -132,6 +152,8 @@
     width: 100%
   .buttonPrevVideo
     width: 25%
+    bottom: 130px
+    top: 70px;
 
   .buttonNext
     width: 50%
@@ -142,6 +164,8 @@
   .buttonNextVideo
     width: 25%
     left: 75%
+    bottom: 130px
+    top: 70px;
 
 :global(.no-touchevents)
   .swiper
