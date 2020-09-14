@@ -30,12 +30,14 @@ const ProjectRow = ({
   const [currentItemIndex, setCurrentItemIndex] = useState(0)
   const [lastScrollY, setLastScrollY] = useState(0)
   const [caseHeight, setCaseHeight] = useState(0)
+  const [isTransitioning, setIsTransitioning] = useState(false)
 
   const isOpen = projectIndex === openProjectIndex
   const isProjectAboveOpen =
     openProjectIndex !== null && openProjectIndex < projectIndex
 
   const toggle = () => {
+    setIsTransitioning(true)
     const targetY = isOpen
       ? lastScrollY
       : window.scrollY +
@@ -56,7 +58,9 @@ const ProjectRow = ({
         updateScroll({
           targetY,
         })
-      )()
+      )().then(() => {
+        setIsTransitioning(false)
+      })
     })
   }
 
@@ -86,9 +90,12 @@ const ProjectRow = ({
         ref={ref}
         className={cn(
           "flex items-start",
-          hasGallery
-            ? "hover:bg-hoverGrey active:bg-activeGrey"
-            : "hover:bg-hoverPaleGrey",
+          { "pointer-events-none": isTransitioning },
+          !isTransitioning
+            ? hasGallery
+              ? "hover:bg-hoverGrey active:bg-activeGrey"
+              : "hover:bg-hoverPaleGrey"
+            : "",
           { [styles.rowEmpty]: !hasGallery },
           styles.row,
           className
