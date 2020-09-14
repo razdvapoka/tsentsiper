@@ -11,13 +11,16 @@ menuInnerOpen()
         opacity: 1
         transition: opacity .3s ease-out .1s
 
+.menuWrapper
+  padding-bottom: 16px;
+  bottom: 0
+  left: 50%
+  transition: padding-bottom .4s cubic-bezier(.25, .1, .25, 1), transform .3s cubic-bezier(0, 0, .35, 1) .5s, opacity .1s ease-out .5s
+
 .menu
-  bottom: 16px
   border-radius: 24px
   width: 210px
   padding: 13px 16px 18px
-  left: 50%
-  transition: bottom .4s cubic-bezier(.25, .1, .25, 1), transform .3s cubic-bezier(0, 0, .35, 1) .5s, opacity .1s ease-out .5s
   box-shadow: 0 8px 16px -10px #2A2AEA;
   @media (max-width: 767px)
     width: 264px
@@ -32,24 +35,27 @@ menuInnerOpen()
     transition: none //opacity .2s ease-out
 
 :global(.no-touchevents)
-  .menu:hover
-    bottom: 24px;
-    menuInnerOpen()
+  .menuWrapper:hover
+    padding-bottom: 24px
+    .menu
+      menuInnerOpen()
 
 :global(.touchevents)
-  .menuOpen
-    menuInnerOpen()
+  .menuWrapper.menuOpen
+    padding-bottom: 24px
+    .menu
+      menuInnerOpen()
 
 .menuDescription
   margin-bottom: 5px
   @media (max-width: 767px)
     margin-bottom: 2px
 
-.menuHidden
+.menuWrapperHidden
   transform: translate(-50%, 80px)
   opacity: 0
 
-.menuVisible
+.menuWrapperVisible
   transform: translate(-50%, 0)
   opacity: 1
 

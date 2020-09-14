@@ -15,61 +15,65 @@ const Menu = ({ description, isVisible }) => {
   }
   useOnClickOutside(ref, close)
   return (
-    <nav
-      ref={ref}
+    <div
       className={cn(
-        "fixed bg-blue text-white text-center z-50",
-        isVisible ? styles.menuVisible : styles.menuHidden,
-        styles.menu,
-        { [styles.menuOpen]: isOpen }
+        "fixed z-50",
+        styles.menuWrapper,
+        isVisible ? styles.menuWrapperVisible : styles.menuWrapperHidden,
+        {
+          [styles.menuOpen]: isOpen,
+        }
       )}
+      ref={ref}
       onClick={() => !isOpen && setIsOpen(true)}
     >
-      <div className={cn("absolute", styles.logoBox)}>
-        <Logo />
-      </div>
-      <div className="cursor-default">
-        {intl.formatMessage({ id: "tsentsiper" })}
-      </div>
-      <div className={cn("h-0 overflow-hidden", styles.menuInner)}>
-        <div className={cn("opacity-0", styles.menuUpper)}>
-          <a
+      <nav className={cn("bg-blue text-white text-center", styles.menu)}>
+        <div className={cn("absolute", styles.logoBox)}>
+          <Logo />
+        </div>
+        <div className="cursor-default">
+          {intl.formatMessage({ id: "tsentsiper" })}
+        </div>
+        <div className={cn("h-0 overflow-hidden", styles.menuInner)}>
+          <div className={cn("opacity-0", styles.menuUpper)}>
+            <a
+              className={cn(
+                "block mt-1 py-1 text-purple hover:text-white",
+                styles.contact
+              )}
+              href="mailto:hello@tsentsiper.com"
+            >
+              {intl.formatMessage({ id: "contact" })}
+            </a>
+            <IntlContextConsumer>
+              {({ languages, language }) => (
+                <button
+                  className={cn(
+                    "w-full py-1 text-purple hover:text-white",
+                    styles.language
+                  )}
+                  onClick={() => {
+                    changeLocale(language === "ru" ? "en" : "ru")
+                  }}
+                >
+                  {intl.formatMessage({ id: "lang" })}
+                </button>
+              )}
+            </IntlContextConsumer>
+            <hr className="border-palePurple my-4" />
+          </div>
+          <div
             className={cn(
-              "block mt-1 py-1 text-purple hover:text-white",
-              styles.contact
+              "opacity-0 px-2 cursor-default",
+              styles.menuDescription
             )}
-            href="mailto:hello@tsentsiper.com"
+            onClick={close}
           >
-            {intl.formatMessage({ id: "contact" })}
-          </a>
-          <IntlContextConsumer>
-            {({ languages, language }) => (
-              <button
-                className={cn(
-                  "w-full py-1 text-purple hover:text-white",
-                  styles.language
-                )}
-                onClick={() => {
-                  changeLocale(language === "ru" ? "en" : "ru")
-                }}
-              >
-                {intl.formatMessage({ id: "lang" })}
-              </button>
-            )}
-          </IntlContextConsumer>
-          <hr className="border-palePurple my-4" />
+            {description}
+          </div>
         </div>
-        <div
-          className={cn(
-            "opacity-0 px-2 cursor-default",
-            styles.menuDescription
-          )}
-          onClick={close}
-        >
-          {description}
-        </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
   )
 }
 
