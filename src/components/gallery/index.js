@@ -160,14 +160,14 @@ const GalleryItem = ({
 
   return (
     <div className={styles.slide} style={{ width: slideWidth }} {...handlers}>
-      {item.video ? (
+      {item.video && item.image ? (
         <VideoItem
           src={item.video.file.url}
           poster={item.image.fluid.src}
           setCaption={setVideoCaption}
           isCurrentItem={isCurrentItem}
         />
-      ) : (
+      ) : item.image ? (
         <Img
           className={styles.img}
           fluid={{
@@ -175,7 +175,7 @@ const GalleryItem = ({
             aspectRatio: ASPECT_RATIO,
           }}
         />
-      )}
+      ) : null}
     </div>
   )
 }
