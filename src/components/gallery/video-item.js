@@ -7,20 +7,23 @@ const VideoItem = ({ src, poster, setCaption, isCurrentItem }) => {
   const ref = useRef(null)
   const [isPlaying, setIsPlaying] = useState(false)
 
-  const play = () => ref.current.play()
-  const pause = () => ref.current.pause()
-  const toggle = e => {
-    e.stopPropagation()
-    e.preventDefault()
-    if (isPlaying) {
-      pause()
-    } else {
-      play()
+  const play = () => {
+    if (!isPlaying) {
+      ref.current.play()
     }
   }
 
-  const setPlayOn = () => setIsPlaying(true)
-  const setPlayOff = () => setIsPlaying(false)
+  const pause = () => {
+    ref.current.pause()
+  }
+
+  const setPlayOn = () => {
+    setIsPlaying(true)
+  }
+
+  const setPlayOff = () => {
+    setIsPlaying(false)
+  }
 
   useEffect(() => {
     if (ref.current) {
@@ -61,12 +64,14 @@ const VideoItem = ({ src, poster, setCaption, isCurrentItem }) => {
       })}
     >
       {!isPlaying && (
-        <Play
+        <button
           className={cn("absolute z-10 pointer-events-none", styles.play)}
-        />
+        >
+          <Play />
+        </button>
       )}
       <video
-        onClick={toggle}
+        onClick={play}
         ref={ref}
         className={cn("absolute left-0 top-0 w-full h-full", styles.video)}
         src={src}
