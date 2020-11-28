@@ -18,6 +18,7 @@ const ProjectRow = ({
   children,
   className,
   gallery,
+  isGalleryVisible,
   projectIndex,
   openProjectIndex,
   setOpenProjectIndex,
@@ -82,7 +83,8 @@ const ProjectRow = ({
     }
   }, [galleryRef, handleResize])
 
-  const hasGallery = !!gallery
+  const hasGallery =
+    !!gallery && (process.env.GATSBY_CASES_VISIBLE || isGalleryVisible)
 
   return (
     <React.Fragment>

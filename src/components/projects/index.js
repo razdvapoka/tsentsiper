@@ -37,6 +37,7 @@ const Projects = ({ projects, isVisible }) => {
             category={project.category}
             type={project.type}
             gallery={project.gallery}
+            isGalleryVisible={project.isGalleryVisible}
             openProjectIndex={openProjectIndex}
             setOpenProjectIndex={setOpenProjectIndex}
             projectIndex={projectIndex}

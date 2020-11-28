@@ -1,9 +1,9 @@
 menuInnerOpen()
   .menuInner
-      height: 146px
+      height: 140px
       transition: height .4s cubic-bezier(.25, .1, .25, 1)
       @media (max-width: 767px)
-        height: 136px
+        height: 130px
       .menuUpper
         opacity: 1
         transition: opacity .3s ease-out .1s
@@ -21,7 +21,7 @@ menuInnerOpen()
 .menu
   border-radius: 24px
   width: 210px
-  padding: 13px 16px 18px
+  padding: 13px 16px 15px
   box-shadow: 0 8px 16px -10px #2A2AEA;
   @media (max-width: 767px)
     width: 264px
@@ -34,6 +34,8 @@ menuInnerOpen()
     transition: opacity .2s ease-out
   .menuDescription
     transition: none //opacity .2s ease-out
+  .menuSeparator
+    margin: 14px 0;
 
 :global(.no-touchevents)
   .menuWrapper:hover
@@ -46,11 +48,6 @@ menuInnerOpen()
     padding-bottom: 24px
     .menu
       menuInnerOpen()
-
-.menuDescription
-  margin-bottom: 5px
-  @media (max-width: 767px)
-    margin-bottom: 2px
 
 .menuWrapperHidden
   transform: translate(-50%, 80px)

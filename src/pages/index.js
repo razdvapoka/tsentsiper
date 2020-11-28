@@ -48,6 +48,7 @@ export const query = graphql`
         description
         title
         year
+        isGalleryVisible
         gallery {
           caption
           image {
