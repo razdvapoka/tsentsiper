@@ -1,15 +1,4 @@
 menuInnerOpen()
-  .menuInner
-      height: 140px
-      transition: height .4s cubic-bezier(.25, .1, .25, 1)
-      @media (max-width: 767px)
-        height: 130px
-      .menuUpper
-        opacity: 1
-        transition: opacity .3s ease-out .1s
-      .menuDescription
-        opacity: 1
-        transition: opacity .3s ease-out .1s
 
 .menuWrapper
   will-change: transform
@@ -25,7 +14,7 @@ menuInnerOpen()
   box-shadow: 0 8px 16px -10px #2A2AEA;
   @media (max-width: 767px)
     width: 264px
-    padding: 15px 20px 20px
+    padding: 15px 20px 16px
     border-radius: 28px
 
   .menuInner
@@ -37,17 +26,16 @@ menuInnerOpen()
   .menuSeparator
     margin: 14px 0;
 
-:global(.no-touchevents)
-  .menuWrapper:hover
-    padding-bottom: 24px
-    .menu
-      menuInnerOpen()
-
-:global(.touchevents)
-  .menuWrapper.menuOpen
-    padding-bottom: 24px
-    .menu
-      menuInnerOpen()
+.menuWrapper.menuOpen
+  padding-bottom: 24px
+  .menuInner
+    transition: height .4s cubic-bezier(.25, .1, .25, 1)
+    .menuUpper
+      opacity: 1
+      transition: opacity .3s ease-out .1s
+    .menuDescription
+      opacity: 1
+      transition: opacity .3s ease-out .1s
 
 .menuWrapperHidden
   transform: translate(-50%, 80px)
@@ -60,17 +48,16 @@ menuInnerOpen()
 .logoBox
   width: 22px
   left: 16px
-  top: 14px
+  top: 13px
   @media (max-width: 767px)
-    top: 16px
+    top: 14px
     left: 18px
 
 .contact
-  margin-top: 4px
+  padding-top: 8px
   @media (max-width: 767px)
-    margin-top: 7px
+    padding-top: 11px
 
-.contact
 .language
   padding: 4px 0
   @media (max-width: 767px)

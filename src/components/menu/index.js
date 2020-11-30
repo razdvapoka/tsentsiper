@@ -1,3 +1,4 @@
+import { useMeasure } from "react-use"
 import React, { useState, useRef } from "react"
 import useOnClickOutside from "use-onclickoutside"
 import styles from "./styles.module.styl"
@@ -11,6 +12,7 @@ const Menu = ({ description, isVisible }) => {
   const [isOpen, setIsOpen] = useState(false)
   const intl = useIntl()
   const ref = useRef(null)
+  const [innerMenuRef, { height }] = useMeasure()
   const close = () => {
     setIsOpen(false)
   }
@@ -27,6 +29,8 @@ const Menu = ({ description, isVisible }) => {
       )}
       ref={ref}
       onClick={() => !isOpen && setIsOpen(true)}
+      onMouseEnter={() => setIsOpen(true)}
+      onMouseLeave={() => setIsOpen(false)}
     >
       <nav className={cn("bg-blue text-white text-center", styles.menu)}>
         <div className={cn("absolute", styles.logoBox)}>
@@ -35,43 +39,50 @@ const Menu = ({ description, isVisible }) => {
         <div className="cursor-default">
           {intl.formatMessage({ id: "tsentsiper" })}
         </div>
-        <div className={cn("h-0 overflow-hidden", styles.menuInner)}>
-          <div className={cn("opacity-0", styles.menuUpper)}>
-            <a
+        <div
+          className={cn("overflow-hidden", styles.menuInner)}
+          style={{
+            height: isOpen ? height : 0,
+          }}
+        >
+          <div ref={innerMenuRef}>
+            <div className={cn("opacity-0", styles.menuUpper)}>
+              <a
+                className={cn(
+                  "block pb-1 text-purple hover:text-white",
+                  styles.contact
+                )}
+                href="mailto:hello@tsentsiper.com"
+              >
+                {intl.formatMessage({ id: "contact" })}
+              </a>
+              <IntlContextConsumer>
+                {({ languages, language }) => (
+                  <button
+                    className={cn(
+                      "w-full py-1 text-purple hover:text-white",
+                      styles.language
+                    )}
+                    onClick={() => {
+                      changeLocale(language === "ru" ? "en" : "ru")
+                    }}
+                  >
+                    {intl.formatMessage({ id: "lang" })}
+                  </button>
+                )}
+              </IntlContextConsumer>
+              <hr className={cn("border-palePurple", styles.menuSeparator)} />
+            </div>
+            <Typograf
               className={cn(
-                "block mt-1 py-1 text-purple hover:text-white",
-                styles.contact
+                "opacity-0 px-2 cursor-default",
+                styles.menuDescription
               )}
-              href="mailto:hello@tsentsiper.com"
+              onClick={close}
             >
-              {intl.formatMessage({ id: "contact" })}
-            </a>
-            <IntlContextConsumer>
-              {({ languages, language }) => (
-                <button
-                  className={cn(
-                    "w-full py-1 text-purple hover:text-white",
-                    styles.language
-                  )}
-                  onClick={() => {
-                    changeLocale(language === "ru" ? "en" : "ru")
-                  }}
-                >
-                  {intl.formatMessage({ id: "lang" })}
-                </button>
-              )}
-            </IntlContextConsumer>
-            <hr className={cn("border-palePurple", styles.menuSeparator)} />
+              {description}
+            </Typograf>
           </div>
-          <Typograf
-            className={cn(
-              "opacity-0 px-2 cursor-default",
-              styles.menuDescription
-            )}
-            onClick={close}
-          >
-            {description}
-          </Typograf>
         </div>
       </nav>
     </div>
