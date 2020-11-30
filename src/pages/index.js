@@ -23,7 +23,7 @@ const IndexPageInner = ({ pageData, pageContext }) => {
         meta={[
           {
             name: "og:image",
-            content: `${process.env.VERCEL_URL}/common-opengraph.png`,
+            content: `https://tsentsiper.com/common-opengraph.png`,
           },
         ]}
       />
