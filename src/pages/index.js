@@ -20,6 +20,12 @@ const IndexPageInner = ({ pageData, pageContext }) => {
         title={intl.formatMessage({ id: "tsentsiper" })}
         description={pageData.seoDescription}
         url={intl.formatMessage({ id: "url" })}
+        meta={[
+          {
+            name: "og:image",
+            content: `${proces.env.VERCEL_URL}/common-opengraph.png`,
+          },
+        ]}
       />
       <Projects isVisible={fontsLoaded} projects={pageData.projects} />
       <FixedBottom>
