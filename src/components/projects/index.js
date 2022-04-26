@@ -22,8 +22,7 @@ const Projects = ({ projects, isVisible }) => {
         number={intl.formatMessage({ id: "number" })}
         client={intl.formatMessage({ id: "client" })}
         project={intl.formatMessage({ id: "project" })}
-        category={intl.formatMessage({ id: "category" })}
-        type={intl.formatMessage({ id: "type" })}
+        deliverables={intl.formatMessage({ id: "deliverables" })}
       />
       {projects.map((project, projectIndex) => {
         const number = projects.length - projectIndex
@@ -43,6 +42,7 @@ const Projects = ({ projects, isVisible }) => {
             projectIndex={projectIndex}
             openProjectCaseHeight={openProjectCaseHeight}
             setOpenProjectCaseHeight={setOpenProjectCaseHeight}
+            deliverables={project.deliverables}
           />
         )
       })}

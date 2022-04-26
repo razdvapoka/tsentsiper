@@ -9,6 +9,7 @@ import { FontsLoadedProvider, useFontsLoaded } from "../fonts-loaded-context"
 import Menu from "../components/menu"
 import Projects from "../components/projects"
 import SEO from "../components/seo"
+import Intro from "../components/intro"
 
 const IndexPageInner = ({ pageData, pageContext }) => {
   const intl = useIntl()
@@ -27,6 +28,7 @@ const IndexPageInner = ({ pageData, pageContext }) => {
           },
         ]}
       />
+      <Intro isVisible={fontsLoaded}>{pageData.intro}</Intro>
       <Projects isVisible={fontsLoaded} projects={pageData.projects} />
       <FixedBottom>
         <Menu isVisible={fontsLoaded} description={pageData.menuAbout} />
@@ -47,6 +49,7 @@ export const query = graphql`
       title
       menuAbout
       seoDescription
+      intro
       projects {
         category
         id
@@ -55,6 +58,7 @@ export const query = graphql`
         title
         year
         isGalleryVisible
+        deliverables
         gallery {
           caption
           image {

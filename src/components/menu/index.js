@@ -4,11 +4,9 @@ import useOnClickOutside from "use-onclickoutside"
 import styles from "./styles.module.styl"
 import cn from "classnames"
 import Logo from "../../icons/logo.inline.svg"
-import Typograf from "../typograph"
 import { useIntl } from "gatsby-plugin-intl"
-import { IntlContextConsumer, changeLocale } from "gatsby-plugin-intl"
 
-const Menu = ({ description, isVisible }) => {
+const Menu = ({ isVisible }) => {
   const [isOpen, setIsOpen] = useState(false)
   const intl = useIntl()
   const ref = useRef(null)
@@ -56,32 +54,7 @@ const Menu = ({ description, isVisible }) => {
               >
                 {intl.formatMessage({ id: "contact" })}
               </a>
-              <IntlContextConsumer>
-                {({ languages, language }) => (
-                  <button
-                    className={cn(
-                      "w-full py-1 text-purple hover:text-white",
-                      styles.language
-                    )}
-                    onClick={() => {
-                      changeLocale(language === "ru" ? "en" : "ru")
-                    }}
-                  >
-                    {intl.formatMessage({ id: "lang" })}
-                  </button>
-                )}
-              </IntlContextConsumer>
-              <hr className={cn("border-palePurple", styles.menuSeparator)} />
             </div>
-            <Typograf
-              className={cn(
-                "opacity-0 px-2 cursor-default",
-                styles.menuDescription
-              )}
-              onClick={close}
-            >
-              {description}
-            </Typograf>
           </div>
         </div>
       </nav>
