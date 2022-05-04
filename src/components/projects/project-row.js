@@ -128,6 +128,7 @@ const ProjectRow = ({
           <Typograf className={styles.client}>{client}</Typograf>
         </div>
         <Typograf className={styles.project}>{project}</Typograf>
+        <Typograf className={styles.category}>{category}</Typograf>
         <Typograf className={styles.deliverables}>
           {deliverables || ""}
         </Typograf>

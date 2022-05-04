@@ -45,7 +45,7 @@ const IndexPage = ({ data: { contentfulPage: pageData }, pageContext }) => (
 
 export const query = graphql`
   query MainPage($locale: String) {
-    contentfulPage(title: { eq: "main" }, node_locale: { eq: $locale }) {
+    contentfulPage(title: { eq: "main-new" }, node_locale: { eq: $locale }) {
       title
       menuAbout
       seoDescription
